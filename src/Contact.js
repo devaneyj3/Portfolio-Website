@@ -19,11 +19,24 @@ const Contact = () => {
             <Form>
                 <Field name='subject' placeholder='Enter your subject'/>
                 <Field name='message' placeholder='Enter your message'/>
-                <button type='button'>Submit</button>
+                <button type='submit'>Submit</button>
             </Form>
-
-
         </Formik>
+        <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Whitmore Lake, MI 48189, USA</p>
+                    </li>
+    
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>810-220-9256</p>
+                    </li>
+    
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>jordandevaney28@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
     </>
     )
 }
