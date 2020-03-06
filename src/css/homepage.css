@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+}
+nav {
+  background-color: #C3B7B7;
+  border: groove;
+  box-shadow: 10px 10px 8px #888888;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    height: 100%;
+    margin: 20px;
+    margin-left: auto;
+  }
+}
+nav ul li {
+  list-style: none;
+}
+@media (max-width: 500px) {
+  nav ul li {
+    margin-bottom: 5%;
+  }
+}
+nav ul li a {
+  text-decoration: none;
+  color: #00303F;
+}
+nav ul li a:hover {
+  color: black;
+}
+.home {
+  display: flex;
+  padding: 5%;
+}
+@media (max-width: 662px) {
+  .home {
+    text-align: center;
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    display: block;
+    text-align: center;
+  }
+}
+.home img {
+  width: 25%;
+  border-radius: 50%;
+}
+@media (max-width: 662px) {
+  .home img {
+    height: 45%;
+    border-radius: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home img {
+    display: none;
+  }
+}
+.home .header {
+  margin-left: 10%;
+}
+.home .header h1 {
+  color: #00303F;
+  font-size: 4rem;
+}
+p {
+  text-align: center;
+}
+.work {
+  padding: 5%;
+  margin: 2%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border: groove;
+  border-radius: 25%;
+  background-color: #c3b7b7;
+  box-shadow: 10px 10px 8px #888888;
+}
+.work p {
+  margin-bottom: 5%;
+}
+.work li {
+  list-style: square;
+  margin-left: 5%;
+}
+section h2 {
+  color: #00303F;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+.portfolio {
+  background-color: #FBF8F8;
+  padding: 5%;
+}
+.portfolio .projects {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.portfolio .projects .row {
+  padding: 50px;
+  width: 30%;
+  text-align: center;
+  margin-top: 10%;
+  margin: 2%;
+  background-color: #c3b7b7;
+  border-radius: 15%;
+  border: groove;
+  box-shadow: 10px 10px 8px #888888;
+}
+@media (max-width: 662px) {
+  .portfolio .projects .row {
+    width: 60%;
+  }
+}
+.portfolio .projects .row a {
+  text-decoration: none;
+  color: #334568;
+}
+.portfolio .projects .row img {
+  width: 50%;
+  border-radius: 50%;
+}
+.portfolio footer {
+  margin-top: 15%;
+}
+.contact {
+  background-color: #c3b7b7;
+  padding-top: 30px;
+  border-top: 1px groove #62533D;
+}
+.contact .social-header {
+  text-align: center;
+}
+.contact .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  height: 100px;
+  width: 60%;
+  margin-left: 21%;
+}
+.contact .social-links a {
+  text-decoration: none;
+}
+.contact .social-links a:hover {
+  color: black;
+}
+.contact .contactInfo {
+  border-bottom: 2px ridge;
+}
+.contact footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
