@@ -5,7 +5,8 @@ const Jobs = () => {
     let [ work, setWork ] = useState(workData)
     return (
         <>
-        {work.map((job, i) => {
+        <section className='jobs'>
+        {work.map((job) => {
             return (
                 <>
                     <div className='info'>
@@ -13,12 +14,13 @@ const Jobs = () => {
                         <span class='dates'>{job.years}</span>
                     </div>
                     <p class='buisnessAreas'>{job.buisness} - {job.area}</p>
-                    <ul class='desciption'>
+                    <ul class='description'>
                         <li>{job.description}</li>
                     </ul>
                 </>
             )
         })}
+        </section>
         </>
     )
 }

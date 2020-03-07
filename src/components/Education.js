@@ -6,6 +6,7 @@ const Education = () => {
 
     return (
         <>
+        <section className="education">
             {education.map(school => {
                 return (
                     <>
@@ -15,11 +16,12 @@ const Education = () => {
                         </div>
                         <p class='buisnessAreas'>{school.degree}</p>
                         <ul class='skills'>
-                            <li>${school.description}</li>
+                            <li>{school.description}</li>
                         </ul>
                     </>
                 )
             })}
+        </section>
         </>
     )
 }
