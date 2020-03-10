@@ -61,8 +61,9 @@ section {
     padding: 5%;
     .projects{
         flex-wrap: wrap;
-        flex: center; 
-        justify-content: baseline;
+        display: flex; 
+        justify-content: center;
+        align-items: baseline;
         .row {
             padding: 50px;
             width: 30%;
@@ -99,11 +100,10 @@ section {
         text-align: center;
     }
     .social-links {
-        flex: center; 
-        justify-content: space-evenly;
-        height: 100px;
-        width: 60%;
-        margin-left: 21%;
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
         a {
             text-decoration: none;
             &:hover {

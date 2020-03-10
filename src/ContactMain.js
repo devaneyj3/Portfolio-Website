@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const ContactMain = () => {
     return (
@@ -8,9 +10,9 @@ const ContactMain = () => {
                 <p>Contact me so I can help you make an awesome website!!!</p>
             </div>
         <ul class="social-links">
-            <a href="https://www.facebook.com/jordan.devaney.798"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.linkedin.com/in/jordandevaney/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/devaneyj3"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/jordan.devaney.798"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a>
+            <a href="https://www.linkedin.com/in/jordandevaney/"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
+            <a href="https://github.com/devaneyj3"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
         </ul>
         <p class="contactInfo"><a href='mailto:jordandevaney28@gmail.com'>jordandevaney28@gmail.com</a> | 810-220-9256</p>
         <footer>
