@@ -1,0 +1,122 @@
+
+
+.home {
+    display: flex;
+    padding: 5%;
+    img {
+        width: 25%;
+        border-radius: 50%;
+        // @media @tablet {
+        //     height: 45%;
+        //     border-radius: 0;
+        // }
+        // @media @mobile {
+        //     .display(none);
+        // }
+    }
+    .header {
+        margin-left: 10%;
+        h1 {
+            color: #00303F;
+            font-size: 4rem;
+        }
+    }  
+}
+p {
+    text-align: center;
+}
+
+.work {
+    padding: 5%;
+    margin: 2%;
+    flex-wrap: wrap;
+    flex: center;
+    justify-content: baseline;
+    border: groove;
+    border-radius: 25%;
+    background-color: #c3b7b7;
+    box-shadow: 10px 10px 8px #888888;
+    p {
+        margin-bottom: 5%;
+    }
+    li {
+        list-style: square;
+        margin-left: 5%;
+    }
+}
+
+section {
+    h2 {
+        color: #00303F; 
+        font-size: 4rem;
+        margin-bottom: 30px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.portfolio {
+    background-color: #FBF8F8;
+    padding: 5%;
+    .projects{
+        flex-wrap: wrap;
+        flex: center; 
+        justify-content: baseline;
+        .row {
+            padding: 50px;
+            width: 30%;
+            text-align: center;
+            margin-top: 10%;
+            margin: 2%;
+            background-color: #c3b7b7;
+            border-radius: 15%;
+            border: groove;
+            box-shadow: 10px 10px 8px #888888;
+            // @media @tablet {
+            //     .width(60%);
+            // }
+        a {
+            text-decoration: none;
+            color: #334568;
+        }
+            img {
+                width: 50%;
+                border-radius: 50%;
+            }
+        }
+    }
+    footer {
+        margin-top: 15%;
+    }
+}
+
+.contact {
+    background-color: #c3b7b7;
+    padding-top: 30px;
+    border-top: 1px groove #62533D;
+    .social-header {
+        text-align: center;
+    }
+    .social-links {
+        flex: center; 
+        justify-content: space-evenly;
+        height: 100px;
+        width: 60%;
+        margin-left: 21%;
+        a {
+            text-decoration: none;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .contactInfo {
+        border-bottom: 2px ridge;
+    }
+    footer {
+        flex: center;
+        justify-content: center;
+        height: 70px;
+    }
+}

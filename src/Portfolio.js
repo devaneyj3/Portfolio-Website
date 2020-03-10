@@ -3,7 +3,7 @@ import Work from './Work';
 import Description from './Description';
 import Projects from './Projects';
 import ContactMain from './ContactMain';
-import './css/homepage.css'
+import './css/homepage.scss'
 
 
 const Portfolio = () => {
