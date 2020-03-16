@@ -1,7 +1,7 @@
 import React from 'react';
-import wonderlist from './images/wunderlist.png';
-import simon_game from './images/simon-game.png';
-import Drum_Kit from './images/Drum Kit.png';
+import wonderlist from '../images/wunderlist.png';
+import simon_game from '../images/simon-game.png';
+import Drum_Kit from '../images/Drum Kit.png';
 
 const Projects = () => {
     return (

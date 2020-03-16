@@ -1,7 +1,6 @@
 import React from 'react';
-import Jobs from './components/Jobs';
-import Eduction from './components/Education';
-import './css/resume.scss';
+import Jobs from './Jobs';
+import Eduction from './Education';
 
 const Resume = () => {
     return (

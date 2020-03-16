@@ -1,9 +1,8 @@
 import React from 'react';
-import Work from './Work';
-import Description from './Description';
-import Projects from './Projects';
-import ContactMain from './ContactMain';
-import './css/homepage.scss'
+import Work from './Work.jsx';
+import Description from './Description.jsx';
+import Projects from './Projects.jsx';
+import ContactMain from './ContactMain.jsx';
 
 
 const Portfolio = () => {
