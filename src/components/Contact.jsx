@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Col, Row, Button, FormGroup, Label, Input } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarker, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
 
@@ -18,7 +20,7 @@ const Contact = () => {
 
     return (
         <>
-        <div className='contact'>
+        <div className='contact-page-header'>
             <h2>Contact Me</h2>
             <p>Do you have any questions? Please do not hesitate to contact me directly. I will get back to you within
             a matter of hours to help you.</p>
@@ -36,23 +38,21 @@ const Contact = () => {
                     </FormGroup>
                 </Col>
             </Row>
-            <button type='submit'>Submit</button>
+            <Button color="info">Send</Button>
         </form>
         <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>Whitmore Lake, MI 48189, USA</p>
-                    </li>
-    
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>810-220-9256</p>
-                    </li>
-    
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>jordandevaney28@gmail.com</p>
-                    </li>
-                </ul>
-            </div>
+            <li><FontAwesomeIcon icon={faMapMarker}></FontAwesomeIcon>
+                <p>Whitmore Lake, MI 48189, USA</p>
+            </li>
+
+            <li><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
+                <p>810-220-9256</p>
+            </li>
+
+            <li><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                <p>jordandevaney28@gmail.com</p>
+            </li>
+        </div>
     </>
     )
 }

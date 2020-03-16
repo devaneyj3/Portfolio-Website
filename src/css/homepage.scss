@@ -6,13 +6,6 @@
     img {
         width: 25%;
         border-radius: 50%;
-        // @media @tablet {
-        //     height: 45%;
-        //     border-radius: 0;
-        // }
-        // @media @mobile {
-        //     .display(none);
-        // }
     }
     .header {
         margin-left: 10%;
@@ -40,10 +33,13 @@ p {
         margin-bottom: 5%;
     }
     li {
-        list-style: square;
+        list-style: none;
         margin-left: 5%;
     }
 }
+ul {
+    list-style: none;
+  }
 
 section {
     h2 {
@@ -57,7 +53,6 @@ section {
 }
 
 .portfolio {
-    background-color: #FBF8F8;
     padding: 5%;
     .projects{
         flex-wrap: wrap;
@@ -74,9 +69,6 @@ section {
             border-radius: 15%;
             border: groove;
             box-shadow: 10px 10px 8px #888888;
-            // @media @tablet {
-            //     .width(60%);
-            // }
         a {
             text-decoration: none;
             color: #334568;
@@ -93,7 +85,6 @@ section {
 }
 
 .contact {
-    background-color: #c3b7b7;
     padding-top: 30px;
     border-top: 1px groove #62533D;
     .social-header {
