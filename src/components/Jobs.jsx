@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import workData from '../data/workData';
 
 const Jobs = () => {
-    let [ work, setWork ] = useState(workData)
+    let [ work ] = useState(workData)
     return (
         <>
         <section className='jobs'>

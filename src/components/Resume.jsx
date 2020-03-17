@@ -1,7 +1,6 @@
 import React from 'react';
-import Jobs from './Jobs';
-import Eduction from './Education';
-
+import Jobs from './Jobs.jsx';
+import Eduction from './Education.jsx';
 const Resume = () => {
     return (
         <div className='container'>

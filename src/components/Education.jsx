@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import educationData from '../data/educationData';
 
 const Education = () => {
-    let [ education, setEducation ] = useState(educationData)
+    let [ education ] = useState(educationData)
 
     return (
         <>

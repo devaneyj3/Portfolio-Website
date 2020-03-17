@@ -40,7 +40,7 @@ const Contact = () => {
             </Row>
             <Button color="info">Send</Button>
         </form>
-        <div class="col-md-3 text-center">
+        <div class="footer">
             <li><FontAwesomeIcon icon={faMapMarker}></FontAwesomeIcon>
                 <p>Whitmore Lake, MI 48189, USA</p>
             </li>
