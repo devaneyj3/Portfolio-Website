@@ -1,22 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Col, Row, Button, FormGroup, Label, Input } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarker, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import ContactForm from '../hooks/contactForm';
 
 const Contact = () => {
 
-    const [data, setData] = useState({
+    const [data, ChangeHandler, submitForm] = ContactForm({
         subject: '',
         message: ''
     })
 
-    const submitForm = e => {
-        e.preventDefault();
-    }
-
-    const ChangeHandler = e => {
-        setData({...data,[e.target.name]: e.target.value})
-    }
 
     return (
         <>
@@ -29,7 +23,7 @@ const Contact = () => {
             <Row form>
                 <Col md={6}>
                     <Label for="subject">Subject</Label>
-                    <Input name='subject' name='subject' onChange={ChangeHandler} value={data.subject}/>
+                    <Input name='subject' onChange={ChangeHandler} value={data.subject}/>
                 </Col>
                 <Col md={6}>
                     <FormGroup>
