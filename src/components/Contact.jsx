@@ -19,7 +19,7 @@ const Contact = () => {
             <p>Do you have any questions? Please do not hesitate to contact me directly. I will get back to you within
             a matter of hours to help you.</p>
         </div>
-        <form onSubmit={submitForm}>
+        <form onSubmit={submitForm} className='contactForm'>
             <Row form>
                 <Col md={6}>
                     <Label for="subject">Subject</Label>
