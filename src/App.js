@@ -1,11 +1,13 @@
 import React from 'react';
 import Navigation from './components/Navigation.jsx';
-import Routes from './components/Routes';
 import { Jumbotron } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/homepage.scss'
+import './css/reset.scss'
+import './css/portfolioPage.scss'
 import './css/navigation.scss';
-import './css/resume.scss';
+import './css/resumePage.scss';
+import './css/contactPage.scss';
+
 
 
 function App() {
@@ -13,7 +15,6 @@ function App() {
     <Jumbotron>
       <div>
         <Navigation/>
-        <Routes/>
       </div>
     </Jumbotron>
   );

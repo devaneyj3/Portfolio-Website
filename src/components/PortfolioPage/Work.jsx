@@ -2,7 +2,8 @@ import React from 'react';
 
 const Work = () => {
     return (
-        <section class="work">
+        <section className="workContainer">
+            <div className='workContent'>
                 <h2>Skills</h2>
                 <p>I am currently improving me skills in full stack web development
                     by attending Lambda School where I plan on graduating in May 2021.
@@ -19,7 +20,8 @@ const Work = () => {
                     <li>Python</li>
                     <li>React</li>
                 </ul>
-            </section>
+            </div>
+        </section>
     )
 }
 
