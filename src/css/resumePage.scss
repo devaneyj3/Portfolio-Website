@@ -1,0 +1,38 @@
+
+.resume-page-container {
+    margin: 3%;
+    section{
+        margin-bottom: 10%;
+        margin-top: 10%;
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #00303F;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        .dates {
+            color: cadetblue;
+        }
+        p {
+            font-size:2rem;
+            font-style: italic; 
+            text-align: left;
+        }
+        ul {
+            margin-top: 2%;
+            margin-bottom: 10%;
+            margin-left: 10%;
+            li {
+                list-style-type: square;
+                text-align: left;
+            };
+        }
+    }   
+}
+hr {
+    width: 40%;
+}

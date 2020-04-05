@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from './components/Navigation.jsx';
+import { Jumbotron } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/reset.scss'
+import './css/portfolioPage.scss'
+import './css/navigation.scss';
+import './css/resumePage.scss';
+import './css/contactPage.scss';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Jumbotron>
+      <div>
+        <Navigation/>
+      </div>
+    </Jumbotron>
   );
 }
 
