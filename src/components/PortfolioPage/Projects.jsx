@@ -2,6 +2,7 @@ import React from 'react';
 import wonderlist from '../../images/wunderlist.png';
 import simon_game from '../../images/simon-game.png';
 import Drum_Kit from '../../images/drum-kit.png';
+import todo from '../../images/todo.jpg';
 
 const Projects = () => {
     return (
@@ -23,6 +24,12 @@ const Projects = () => {
                     <h3><a href="https://devaneyj3.github.io/simon_game/">Simon Game</a></h3>
                     <p>Use JQuery to dynamically add content to make the site
                         interactive
+                    </p>
+                </section>
+                <section className='row'>
+                    <a href="https://reducer-todo3.netlify.com/" className="image featured"><img src={todo} alt="Todo" /></a>
+                    <h3><a href="https://reducer-todo3.netlify.com/">To Do</a></h3>
+                    <p>Use the use reducer hook in React to make a simple to do app
                     </p>
                 </section>
                 <section className='row'>
