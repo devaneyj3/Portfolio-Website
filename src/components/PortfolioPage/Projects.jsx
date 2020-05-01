@@ -85,8 +85,8 @@ const Projects = () => {
 					<p>
 						Whether you are a small buisness, potential employer, or sole
 						proprietor, I can add value to your team or project. View my
-						complete portfolio on{" "}
-						<a href="https://github.com/devaneyj3">GitHub.</a>
+						complete portfolio on
+						<a href="https://github.com/devaneyj3"> GitHub.</a>
 					</p>
 				</footer>
 			</div>

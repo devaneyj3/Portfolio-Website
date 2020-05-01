@@ -2,18 +2,20 @@ nav {
     background-color: #C3B7B7;
     border: groove;
     box-shadow: 10px 10px 8px #888888;
+
     ul {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         height: 100px;
     }
-}
-a {
-    text-decoration: none;
-    color: black;
-    &:hover {
-        color: blue;
+    a {
         text-decoration: none;
+        color: black;
+    
+        &:hover {
+            color: blue;
+            text-decoration: none;
+        }
     }
 }
