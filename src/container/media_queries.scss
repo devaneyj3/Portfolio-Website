@@ -1,0 +1,16 @@
+@media (max-width: 850px) {
+    .portfolio {
+        .projects {
+            display: block;
+            .row {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    img {
+        display: none;
+    }
+}

@@ -6,6 +6,7 @@ import Resume from "../components/ResumePage/Resume.jsx";
 import { Route, Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./reset.scss";
+import './media_queries.scss'
 
 function App() {
 	return (
