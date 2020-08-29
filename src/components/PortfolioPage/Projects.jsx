@@ -1,10 +1,12 @@
 import React from "react";
 import wonderlist from "../../images/wunderlist.png";
 import simon_game from "../../images/simon-game.png";
-import Drum_Kit from "../../images/drum-kit.png";
+import Game_of_life from "../../images/Game_of_Life.png";
 import todo from "../../images/todo.jpg";
 import shopping_cart from "../../images/Shopping-Cart.png";
 
+
+const game_of_life_url = 'https://game-of-lif-jordan.netlify.app/'
 const Projects = () => {
 	return (
 		<section className="portfolio">
@@ -56,16 +58,15 @@ const Projects = () => {
 				</section>
 				<section className="row">
 					<a
-						href="https://devaneyj3.github.io/Drum_Kit/"
+						href={game_of_life_url}
 						className="image featured">
-						<img src={Drum_Kit} alt="Drum Kit" />
+						<img src={Game_of_life} alt="Game of Life"/>
 					</a>
 					<h3>
-						<a href="https://devaneyj3.github.io/Drum_Kit/">Drum Kit</a>
+						<a href={game_of_life_url}>Game of Life</a>
 					</h3>
 					<p>
-						Used click handlers with JQeury to add interactivity to site. When
-						you click a button it plays a drum sound.
+						This project was a part of one of my build weeks at Lambda School. This was done using HTML Canvas, Vanilla JS and Bootstrap
 					</p>
 				</section>
 				<section className="row">
