@@ -1,5 +1,5 @@
 import React from "react";
-import wonderlist from "../../images/wunderlist.png";
+import fitness from "../../images/fitness.jpg";
 import simon_game from "../../images/simon-game.png";
 import Game_of_life from "../../images/Game_of_Life.png";
 import todo from "../../images/todo.jpg";
@@ -7,6 +7,8 @@ import shopping_cart from "../../images/Shopping-Cart.png";
 
 
 const game_of_life_url = 'https://game-of-lif-jordan.netlify.app/'
+const todo_url = 'https://quizzical-joliot-698fe7.netlify.app/'
+const fitness_url = 'https://inspiring-jones-a91418.netlify.app/'
 const Projects = () => {
 	return (
 		<section className="portfolio">
@@ -20,17 +22,16 @@ const Projects = () => {
 			<div className="projects">
 				<section className="row">
 					<a
-						href="https://wunderlist-2.firebaseapp.com/"
+						href={fitness_url}
 						className="image featured">
-						<img src={wonderlist} alt="Wonderlist-App"></img>
+						<img src={fitness} alt="Anywhere Fitness"></img>
 					</a>
 					<h3>
-						<a href="https://wunderlist-2.firebaseapp.com/">Wunderlist App</a>
+						<a href={fitness_url}>Anywhere Fitness</a>
 					</h3>
-					<p>
-						This was a Lambda School sprint project using React to make a todo
-						list app.
-					</p>
+					<p>An app designed where users can search and reserve fitness classes</p>
+					<p>Constructed API endpoints and database schema using Knex</p>
+					<p>Collaborated with a team of web developers to divde tasks</p>
 				</section>
 				<section className="row">
 					<a
@@ -47,14 +48,15 @@ const Projects = () => {
 				</section>
 				<section className="row">
 					<a
-						href="https://reducer-todo3.netlify.com/"
+						href={todo_url}
 						className="image featured">
 						<img src={todo} alt="Todo" />
 					</a>
 					<h3>
-						<a href="https://reducer-todo3.netlify.com/">To Do</a>
+						<a href={todo_url}>To Do</a>
 					</h3>
-					<p>Use the use reducer hook in React to make a simple to do app</p>
+					<p>Utilized Redux with React to make a todo app.</p>
+					<p>Constructed API endpoints using Node and database schema using Knex</p>
 				</section>
 				<section className="row">
 					<a
