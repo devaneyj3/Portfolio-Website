@@ -1,25 +1,36 @@
 
+@mixin h1{
+    font-weight: bold;
+    font-size: 4rem;
+}
 .home {
-    display: flex;
-    padding: 5%;
     img {
         width: 25%;
         border-radius: 50%;
     }
     .header {
-        margin-left: 10%;
         h1 {
-            color: #00303F;
-            font-size: 4rem;
+            @include h1
         }
     }  
 }
-p {
-    text-align: center;
+
+.About {
+    background-color: #7510F7;
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        h1 {
+            @include h1
+        }
+
+    }
 }
 
 .workContainer {
-    padding: 5%;
     margin: 2%;
     flex-wrap: wrap;
     border: groove;
@@ -35,17 +46,13 @@ p {
 }
 section {
     h2 {
-        color: #00303F; 
         font-size: 4rem;
         margin-bottom: 30px;
-        text-decoration: underline;
-        text-transform: uppercase;
         text-align: center;
     }
 }
 
 .portfolio {
-    padding: 5%;
     .projects{
         flex-wrap: wrap;
         display: flex; 
@@ -57,10 +64,7 @@ section {
             text-align: center;
             margin-top: 10%;
             margin: 2%;
-            background-color: #c3b7b7;
             border-radius: 15%;
-            border: groove;
-            box-shadow: 10px 10px 8px #888888;
         a {
             text-decoration: none;
             color: #334568;
