@@ -13,13 +13,9 @@ let data = [
     image: fitness,
     url: "https://inspiring-jones-a91418.netlify.app/",
     description: [
-      "Front End: HTML, CSS, JavaScript, React, Redux",
-      <br></br>,
-      "Back End: Node.js, SQL, Python",
-      <br></br>,
-      "Data Structures, Algorithms, Architecture",
-      <br></br>,
-      "Git/GitHub",
+      "An app designed where users can search and reserve fitness classes",
+      "Constructed API endpoints and database schema using Knex",
+      "Collaborated with a team of web developers to divde tasks",
     ],
   },
   {
@@ -28,9 +24,7 @@ let data = [
     image: simon_game,
     url: "https://devaneyj3.github.io/simon_game/",
     description: [
-      "Graduated with a 3.55 Cumulative GPA",
-      <br></br>,
-      "Awarded Academic Honors",
+      "Use JQuery to dynamically add content to make the site interactive",
     ],
   },
   {
@@ -39,9 +33,8 @@ let data = [
     image: todo,
     url: "https://quizzical-joliot-698fe7.netlify.app/",
     description: [
-      "Graduated with a 3.55 Cumulative GPA",
-      <br></br>,
-      "Awarded Academic Honors",
+      "Utilized Redux with React to make a todo app.",
+      "Constructed API endpoints using Node and database schema using Knex",
     ],
   },
   {
@@ -50,9 +43,7 @@ let data = [
     image: Game_of_life,
     url: "https://game-of-lif-jordan.netlify.app/",
     description: [
-      "Graduated with a 3.55 Cumulative GPA",
-      <br></br>,
-      "Awarded Academic Honors",
+      "This project was a part of one of my build weeks at Lambda School. This was done using HTML Canvas, Vanilla JS and Bootstrap",
     ],
   },
   {
@@ -60,11 +51,7 @@ let data = [
     name: "Shopping Cart",
     image: shopping_cart,
     url: "https://react-shopping-cart.devaneyj3.now.sh/cart",
-    description: [
-      "Graduated with a 3.55 Cumulative GPA",
-      <br></br>,
-      "Awarded Academic Honors",
-    ],
+    description: ["Used React and Context API to build a basic shopping cart"],
   },
 ];
 
