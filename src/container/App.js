@@ -1,7 +1,7 @@
 import React from "react";
-import Portfolio from "../components/PortfolioPage/Portfolio.jsx";
-import Contact from "../components/ContactPage/Contact.jsx";
-import Resume from "../components/ResumePage/Resume.jsx";
+import Portfolio from "../Pages/PortfolioPage/Portfolio";
+import Contact from "../Pages/ContactPage/Contact";
+import Resume from "../Pages/ResumePage/Resume";
 import { Route, Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./reset.scss";
