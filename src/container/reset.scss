@@ -112,10 +112,6 @@ body {
     line-height: 1;
 }
 
-ol,
-ul {
-    list-style: none;
-}
 
 blockquote,
 q {
@@ -140,10 +136,10 @@ html {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: wheat;
     &:hover {
         text-decoration: none;
-        color: black
+        color: gray
     }
 }
 

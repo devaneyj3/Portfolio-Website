@@ -1,0 +1,10 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    position: fixed;
+    color: white;
+    margin-right: 10%;
+    font-size: 4rem;
+  }
+}

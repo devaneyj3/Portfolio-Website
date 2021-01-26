@@ -33,6 +33,18 @@ const Header = () => {
             {contactText}
           </h1>
         </a>
+        <a href="/resume">
+          <h1
+          >
+            Resume
+          </h1>
+          </a>
+        <a href="https://thesoftwareaccelerator.com">
+          <h1
+          >
+            Blog
+          </h1>
+        </a>
       </section>
       <div
         className="bg-photo"

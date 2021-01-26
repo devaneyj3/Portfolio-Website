@@ -11,7 +11,8 @@ let data = [
     id: 1,
     name: "Anywhere Fitness",
     image: fitness,
-    url: "https://inspiring-jones-a91418.netlify.app/",
+    live_project: "https://inspiring-jones-a91418.netlify.app/",
+    url: "/anywherefitness",
     description: [
       "An app designed where users can search and reserve fitness classes",
       "Constructed API endpoints and database schema using Knex",
@@ -22,7 +23,8 @@ let data = [
     id: 2,
     name: "Simon Game",
     image: simon_game,
-    url: "https://devaneyj3.github.io/simon_game/",
+    live_project: "https://devaneyj3.github.io/simon_game/",
+    url: "/simongame",
     description: [
       "Use JQuery to dynamically add content to make the site interactive",
     ],
@@ -31,7 +33,8 @@ let data = [
     id: 3,
     name: "To Do List",
     image: todo,
-    url: "https://quizzical-joliot-698fe7.netlify.app/",
+    live_project: "https://quizzical-joliot-698fe7.netlify.app/",
+    url: "/list",
     description: [
       "Utilized Redux with React to make a todo app.",
       "Constructed API endpoints using Node and database schema using Knex",
@@ -41,7 +44,8 @@ let data = [
     id: 4,
     name: "Game of Life",
     image: Game_of_life,
-    url: "https://game-of-lif-jordan.netlify.app/",
+    url: "/gameoflife",
+    live_project: "https://game-of-lif-jordan.netlify.app/",
     description: [
       "This project was a part of one of my build weeks at Lambda School. This was done using HTML Canvas, Vanilla JS and Bootstrap",
     ],
@@ -50,7 +54,8 @@ let data = [
     id: 5,
     name: "Shopping Cart",
     image: shopping_cart,
-    url: "https://react-shopping-cart.devaneyj3.now.sh/cart",
+    live_project: "https://react-shopping-cart.devaneyj3.now.sh/cart",
+    url: "/shoppingcart",
     description: ["Used React and Context API to build a basic shopping cart"],
   },
 ];
