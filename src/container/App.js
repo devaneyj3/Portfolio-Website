@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import Contact from "../Pages/ContactPage/Contact";
+import Contact from "../components/Contact/Contact";
 import Resume from "../Pages/ResumePage/Resume";
 import Work from "../components/Work/Work.jsx";
 import Projects from "../components/Projects/Projects";
@@ -14,7 +14,7 @@ import "./media_queries.scss";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Route exact path="/" component={Header} />
       <Route exact path="/about" component={About} />
       <Route exact path="/work" component={Work} />
