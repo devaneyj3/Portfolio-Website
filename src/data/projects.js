@@ -6,7 +6,7 @@ import Game_of_life from "../images/Game_of_Life.png";
 import todo from "../images/todo.jpg";
 import shopping_cart from "../images/Shopping-Cart.png";
 
-let data = [
+let projects = [
   {
     id: 1,
     name: "Anywhere Fitness",
@@ -60,4 +60,4 @@ let data = [
   },
 ];
 
-export default data;
+export default projects;

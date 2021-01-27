@@ -11,11 +11,9 @@ const Contact = () => {
     <section className="contact">
       <Nav />
       <div>
-        <h2>Contact Info</h2>
-        <p>Contact me so I can help you make an awesome website!!!</p>
-        <Button outline color="info">
-          <Link to="/contact">Let's start a convesation</Link>
-        </Button>
+        <h2 className="title">Contact Info</h2>
+        <p className="info">Contact me so I can help you make an awesome website!!!</p>
+          <a href="mailto:jordandevaney28@gmail.com"><Button color="primary" size='lg' >Let's start a conversation</Button></a>
       </div>
       <footer>
       <ul className="social-links">

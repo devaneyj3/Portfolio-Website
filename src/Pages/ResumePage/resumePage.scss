@@ -1,6 +1,5 @@
 
 .resume-page-container {
-    margin: 3%;
     section{
         margin-bottom: 10%;
         margin-top: 10%;
@@ -10,20 +9,25 @@
         }
         h1 {
             font-size: 3rem;
-            color: #00303F;
-            text-decoration: underline;
+            margin-bottom: 3%;
+            color: crimson;
             text-transform: uppercase;
         }
         .dates {
+            font-size: 2rem;
             color: cadetblue;
         }
         p {
             font-size:2rem;
+            font-weight: bold;
             font-style: italic; 
             text-align: left;
         }
         ul {
+            font-size: 2rem;
             margin-top: 2%;
+            color:white;
+            line-height: 1.5;
             margin-bottom: 10%;
             margin-left: 10%;
             li {
