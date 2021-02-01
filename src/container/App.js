@@ -8,7 +8,6 @@ import About from "../components/About/About";
 import projects from "../data/projects";
 import ProjectItem from "../components/ProjectItem/ProjectItem";
 import { Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./reset.scss";
 import "./media_queries.scss";
 
@@ -21,7 +20,7 @@ function App() {
     "shoppingcart",
   ];
   return (
-    <div className="container">
+    <div className="custom_container">
       <Route exact path="/" component={Header} />
       <Route exact path="/about" component={About} />
       <Route exact path="/work" component={Work} />

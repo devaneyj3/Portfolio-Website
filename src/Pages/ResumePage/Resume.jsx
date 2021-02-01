@@ -6,8 +6,8 @@ import "./resumePage.scss";
 const Resume = () => {
 	return (
 		<>
-			<Nav />
 		<div className="resume-page-container">
+			<Nav />
 			<JobsContainer />
 			<hr></hr>
 			<EductionContainer />

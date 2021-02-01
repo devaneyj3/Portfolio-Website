@@ -1,17 +1,14 @@
 .About {
   color:white;
   line-height: 1.2;
-  a {
-    color:wheat;
-    font-weight: bold;
-  }
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   .about-header {
     font-weight: bold;
     font-family: 'sans-serif';
-    font-size: 10rem;
-    h1 {
-      padding: 100px
-    }
+    font-size: 5rem;
+    margin-top: 10%;
   }
   .about-body {
     h1 {
