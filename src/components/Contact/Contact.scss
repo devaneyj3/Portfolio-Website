@@ -13,20 +13,21 @@ a {
     align-items: center;
     text-align: center;
     .title {
+      font-size: 5vw;
       font-weight: bold;
     }
     .info {
-      font-size: 3rem;
+      font-size: 3vw;
       text-align: left;
     }
   }
   footer {
     display: flex;
     justify-content: center;
-    font-size: 2rem
+    font-size: 2vw;
   }
   .social-links {
     align-self: flex-end;
-    width: 33%;
+    width: 20%;
   }
 }
