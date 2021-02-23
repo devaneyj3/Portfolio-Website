@@ -1,6 +1,8 @@
 
 .home {
   font-size: 10vw;
+  display: flex;
+  justify-content: space-between;
   .links {
     align-self: flex-start;
   }
@@ -13,12 +15,8 @@
   a:nth-child(3) {
     color:crimson
   }
-  .bg-photo {
-    z-index: -9;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 50%;
+  img {
+    width: 33%;
+    border-radius: 50%
   }
 }

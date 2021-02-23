@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import me from "../../images/me.png";
+import me from "../../images/Me.jpg";
 import "./Header.scss";
 
 const Header = () => {
@@ -46,15 +46,7 @@ const Header = () => {
           </h1>
         </a>
       </section>
-      <div
-        className="bg-photo"
-        style={{
-          backgroundImage: `url(${me})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+      <img src={me} alt={me}/>
     </section>
   );
 };
