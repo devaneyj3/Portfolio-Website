@@ -17,7 +17,7 @@ const Header = () => {
             {aboutText}
           </h1>
         </a>
-        <a href="/projects">
+        <a href="/work">
           <h1
             onMouseEnter={() => setWorkText("Work")}
             onMouseLeave={() => setWorkText("I am")}
