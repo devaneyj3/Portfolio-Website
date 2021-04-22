@@ -430,6 +430,12 @@ ul#nav li.current a { color: #F06000; }
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
+#portfolio-wrapper { 
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+}
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
