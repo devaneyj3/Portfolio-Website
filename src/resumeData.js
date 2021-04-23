@@ -2,7 +2,7 @@ export const data = {
   name: "Jordan Devaney",
   occupation: "Full Stack Web Developer",
   description:
-    "I have a strong desire to be a productive member of a team environment that fosters learning, growth, and develops a great product for the user",
+    "I have a strong desire to be a productive member of a team environment that fosters learning, growth, and develop a great product for the user",
   image: "Me.jpg",
   bio:
     "I am a Full Stack Web Developer passionate about solving complex problems and making great websites that will benefit the client. I am determined to serve you with my skills and meet your need.",
