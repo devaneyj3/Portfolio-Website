@@ -288,7 +288,7 @@ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 a, a:visited {
    text-decoration: none;
    outline: 0;
-   color: #11ABB0;
+   color: white;
 
    -webkit-transition: color .3s ease-in-out;
    -moz-transition: color .3s ease-in-out;
@@ -486,6 +486,7 @@ input[type="button"] {
    -khtml-border-radius: 3px;
    border-radius: 3px;
 }
+
 
 .button:hover,
 button:hover,

@@ -8,6 +8,7 @@ const Header = ({ data }) => {
     social,
     address: { state },
   } = data;
+  const blog = "https://thesoftwareaccelerator.com";
   const networks = social.map((network) => {
     return (
       <li key={network.name}>
@@ -54,6 +55,11 @@ const Header = ({ data }) => {
               Contact
             </a>
           </li>
+          <li>
+            <a href={blog} target="_blank">
+              Blog
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -66,6 +72,11 @@ const Header = ({ data }) => {
           <hr />
           <ul className="social">{networks}</ul>
         </div>
+        <button className="blog-btn">
+          <a href={blog} target="_blank">
+            Read My Blog
+          </a>
+        </button>
       </div>
 
       <p className="scrolldown">
