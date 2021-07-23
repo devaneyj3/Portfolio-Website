@@ -91,6 +91,10 @@ export const data = {
 				name: "Node",
 				level: "80%",
 			},
+			{
+				name: "AWS",
+				level: "50%",
+			},
 		],
 	},
 	portfolio: {
@@ -111,9 +115,9 @@ export const data = {
 			{
 				title: "To Do List",
 				category:
-					"Utilized Redux with React to make a todo app. Constructed API endpoints using Node and database schema using Knex",
+					"Utilized Redux with React to make a todo app. Used AWS Amplify to deploy and the AWS Graphql API service",
 				image: "todo.jpg",
-				url: "https://quizzical-joliot-698fe7.netlify.app/",
+				url: "https://main.d1k25onjnr2iyp.amplifyapp.com/",
 			},
 			{
 				title: "Game of Life",
