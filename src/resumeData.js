@@ -14,7 +14,6 @@ export const data = {
 		state: "Michigan",
 		zip: 48189,
 	},
-	website: "http://www.timbakerdev.com",
 	resumedownload:
 		"https://docs.google.com/document/d/1s6z0l5ZkmVUJUtrztj5EwSZvry8BQm2dFyws4GhKzw0/edit?usp=sharing",
 	social: [
@@ -48,18 +47,38 @@ export const data = {
 		],
 		work: [
 			{
+				company: "Floodgate Church",
+				title: "Freelance Web Developer",
+				years: "May 2021 - Current",
+				description: [
+					"Met with church's Graphic Designer to stragetize layout of website",
+					"Integrated church's events on an external CMS with Webflow",
+					"Translated mockups onto the Webflow UI",
+				],
+			},
+			{
 				company: "thesoftwareaccelerator.com",
 				title: "Founder/Content Creator",
 				years: "December 2020 - Current",
-				description:
-					"Maintained WordPress website. Engaged in professional development video casts to polish and learn new skills. Incorporated design elements to enhance UX Research article ideas and create content centered around web development. Utilized Copywriting strategies and affilate marketing to increase profits. Utilized SEO optimization to rank on Google and other search engines",
+				description: [
+					"Maintained WordPress website",
+					"Engaged in professional development video casts to polish and learn new skills",
+					"Incorporated design elements to enhance UX",
+					"Research article ideas and create content centered around web development",
+					"Utilized Copywriting strategies and affilate marketing to increase profit",
+					"Utilized SEO optimization to rank on Google and other search engines",
+				],
 			},
 			{
 				company: "DoorDash",
 				title: "Delivery Driver",
 				years: "January 2019 - Current",
-				description:
-					"Comleted over 2000 deliveries with a 4.96 rating out of 5.Operated fast-paced delivery service throughout the Brighton market. Planned and strategized more efficient routes to increase speed of service. Received compliments for my timely service",
+				description: [
+					"Comleted over 3000 deliveries with a 4.91 rating out of 5",
+					"Operated fast-paced delivery service throughout the Brighton market",
+					"Planned and strategized more efficient routes to increase speed of service",
+					"Received compliments for my timely service",
+				],
 			},
 		],
 		skills: [

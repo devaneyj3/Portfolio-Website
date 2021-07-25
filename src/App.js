@@ -8,22 +8,22 @@ import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
 
 const App = () => {
-  const [resumeData, setResumeData] = useState(data);
+	const [resumeData, setResumeData] = useState(data);
 
-  useEffect(() => {
-    setResumeData(data);
-  }, []);
+	useEffect(() => {
+		setResumeData(data);
+	}, []);
 
-  return (
-    <div className="App">
-      <Header data={resumeData} />
-      <About data={resumeData} />
-      <Portfolio data={resumeData} />
-      <Resume data={resumeData} />
-      <Contact data={resumeData} />
-      <Footer data={resumeData} />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Header data={resumeData} />
+			<About data={resumeData} />
+			<Portfolio data={resumeData} />
+			<Resume data={resumeData} />
+			<Contact data={resumeData} />
+			<Footer data={resumeData} />
+		</div>
+	);
 };
 
 export default App;
