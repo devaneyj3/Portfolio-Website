@@ -91,7 +91,7 @@ export const data = {
 				level: "55%",
 			},
 			{
-				name: "ReactJs",
+				name: "ReactJS",
 				level: "80%",
 			},
 			{
@@ -130,6 +130,13 @@ export const data = {
 				category: "Replica of the old Simon Game",
 				image: "simon-game.png",
 				url: "https://devaneyj3.github.io/simon_game/",
+			},
+			{
+				title: "Image Upload",
+				category:
+					"Used React and the React Uploading library to make my own image uploader",
+				image: "simon-game.png",
+				url: "https://main.d39nx6sonuwpa1.amplifyapp.com/",
 			},
 			{
 				title: "To Do List",
