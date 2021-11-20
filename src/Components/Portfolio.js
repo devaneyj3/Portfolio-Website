@@ -9,7 +9,11 @@ const Portfolio = ({ data }) => {
 			<div key={projects.title} className="columns portfolio-item">
 				<a href={projects.url} title={projects.title}>
 					<div className="item-wrap">
-						<img alt={projects.title} src={projectImage} />
+						<img
+							className="portfolio-image"
+							alt={projects.title}
+							src={projectImage}
+						/>
 						<div className="overlay">
 							<div className="portfolio-item-meta">
 								<h5>{projects.title}</h5>
