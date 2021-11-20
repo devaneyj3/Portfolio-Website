@@ -121,40 +121,47 @@ export const data = {
 			{
 				title: "Anywhere Fitness",
 				category:
-					"A fitness management app where instructors can post classes and students can sign up",
+					"A fitness management app where instructors can post classes and students can sign up.",
 				image: "fitness.jpg",
 				url: "https://inspiring-jones-a91418.netlify.app/",
 			},
 			{
 				title: "Simon Game",
-				category: "Replica of the old Simon Game",
+				category: "Replica of the old Simon Game.",
 				image: "simon-game.png",
 				url: "https://devaneyj3.github.io/simon_game/",
 			},
 			{
 				title: "Image Upload",
 				category:
-					"Used React and the React Uploading library to make my own image uploader",
-				image: "simon-game.png",
+					"Used React and the React Uploading library to make my own image uploader.",
+				image: "image_upload.png",
 				url: "https://main.d39nx6sonuwpa1.amplifyapp.com/",
+			},
+			{
+				title: "Quote Maker",
+				category:
+					"Used React, React Router, SCSS, Reactstrap, and UUID to make a quote generator where users can enter in quotes.",
+				image: "quote_maker.png",
+				url: "https://main.d1w5rtjhri4um8.amplifyapp.com/quotes",
 			},
 			{
 				title: "To Do List",
 				category:
-					"Utilized Redux with React to make a todo app. Used AWS Amplify to deploy and the AWS Graphql API service",
+					"Utilized Redux with React to make a todo app. Used AWS Amplify to deploy and the AWS Graphql API service.",
 				image: "todo.jpg",
 				url: "https://main.d1k25onjnr2iyp.amplifyapp.com/",
 			},
 			{
 				title: "Game of Life",
 				category:
-					"This project was a part of one of my build weeks at Lambda School. This was done using HTML Canvas, Vanilla JS and Bootstrap",
+					"This project was a part of one of my build weeks at Lambda School. This was done using HTML Canvas, Vanilla JS and Bootstrap.",
 				image: "life.png",
 				url: "https://game-of-lif-jordan.netlify.app/",
 			},
 			{
 				title: "Budget App",
-				category: "Utilized React and Redux to make a buget and checkbook",
+				category: "Utilized React and Redux to make a buget and checkbook.",
 				image: "budget.png",
 				url: "https://dazzling-kirch-79dfd6.netlify.app/",
 			},
