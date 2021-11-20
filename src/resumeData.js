@@ -14,8 +14,6 @@ export const data = {
 		state: "Michigan",
 		zip: 48189,
 	},
-	resumedownload:
-		"https://docs.google.com/document/d/1s6z0l5ZkmVUJUtrztj5EwSZvry8BQm2dFyws4GhKzw0/edit?usp=sharing",
 	social: [
 		{
 			name: "linkedin",
@@ -30,10 +28,10 @@ export const data = {
 	],
 	resume: {
 		skillmessage:
-			"I have developed superb in demand skills through these awesome college. Also, from various Udemy and other Massive Open Online Courses (MOOCs)",
+			"I have developed superb in demand programming skills through BloomTech (AKA Lambda School), as well as, from various Udemy and other Massive Open Online Courses (MOOCs)",
 		education: [
 			{
-				school: "Lambda School",
+				school: "BloomTech (AKA Lamdba School)",
 				degree: "Full Stack Web Development and Computer Science",
 				graduated: "January 2021",
 				description:
