@@ -70,9 +70,9 @@ export const data = {
 			{
 				company: "DoorDash",
 				title: "Delivery Driver",
-				years: "January 2019 - Current",
+				years: "January 2019 - December 2021",
 				description: [
-					"Comleted over 3000 deliveries with a 4.91 rating out of 5",
+					"Comleted over 4000 deliveries with a 4.93 rating out of 5",
 					"Operated fast-paced delivery service throughout the Brighton market",
 					"Planned and strategized more efficient routes to increase speed of service",
 					"Received compliments for my timely service",
@@ -162,6 +162,13 @@ export const data = {
 				category: "Utilized React and Redux to make a buget and checkbook.",
 				image: "budget.png",
 				url: "https://dazzling-kirch-79dfd6.netlify.app/",
+			},
+			{
+				title: "Github Users",
+				category:
+					"Utilized React, Context API, GitHub API and Fusion Charts to display stats of searched user account.",
+				image: "github.png",
+				url: "https://search-github-users54.netlify.app/",
 			},
 		],
 	},
