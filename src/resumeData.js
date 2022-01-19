@@ -170,6 +170,13 @@ export const data = {
 				image: "github.png",
 				url: "https://search-github-users54.netlify.app/",
 			},
+			{
+				title: "Comfy Sloth",
+				category:
+					"Utilized React, Auth0, Context API with Use Reducer, and Stripe API to make an e-commerce store",
+				image: "comfy.png",
+				url: "https://testing-comfy-jd.netlify.app/",
+			},
 		],
 	},
 };
