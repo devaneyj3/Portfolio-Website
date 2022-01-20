@@ -177,6 +177,12 @@ export const data = {
 				image: "comfy.png",
 				url: "https://testing-comfy-jd.netlify.app/",
 			},
+			{
+				title: "ReduxGear",
+				category: "Utilized React and Redux to create a shopping cart",
+				image: "shopping_cart.png",
+				url: "https://brave-mirzakhani-b5600b.netlify.app",
+			},
 		],
 	},
 };
