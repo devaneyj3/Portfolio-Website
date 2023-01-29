@@ -38,9 +38,9 @@ export const data = {
 					"Worked on cross functional teams and building products with React, Redux, Context, Node, Python, and SQL",
 			},
 			{
-				school: "Spring Arbor University",
-				degree: "Bachelor of Arts: Children’s Ministry",
-				graduated: "May 2013",
+				school: "Western Governer's University",
+				degree: "Bachelor of Science: Software Engineering",
+				graduated: "April 2023",
 			},
 		],
 		work: [
@@ -67,21 +67,14 @@ export const data = {
 					"Utilized SEO optimization to rank on Google and other search engines",
 				],
 			},
-			{
-				company: "DoorDash",
-				title: "Delivery Driver",
-				years: "January 2019 - December 2021",
-				description: [
-					"Comleted over 4000 deliveries with a 4.93 rating out of 5",
-					"Operated fast-paced delivery service throughout the Brighton market",
-					"Planned and strategized more efficient routes to increase speed of service",
-					"Received compliments for my timely service",
-				],
-			},
 		],
 		skills: [
 			{
 				name: "JavaScript",
+				level: "70%",
+			},
+			{
+				name: "Next JS",
 				level: "70%",
 			},
 			{
