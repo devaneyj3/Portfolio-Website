@@ -45,9 +45,20 @@ export const data = {
 		],
 		work: [
 			{
+				company: "The Web Accelerator",
+				title: "Founder/React Developer",
+				years: "Feb 2022 - Present",
+				description: [
+					"Create client websites to maximize their business",
+					"Build client applications using NextJS for SEO",
+					"Utilize Trello for Project Management and task ideas",
+					"Utilized AWS Services for cloud-based backend",
+				],
+			},
+			{
 				company: "Floodgate Church",
 				title: "Freelance Web Developer",
-				years: "May 2021 - Current",
+				years: "May 2021 - Jan 2023",
 				description: [
 					"Met with church's Graphic Designer to stragetize layout of website",
 					"Integrated church's events on an external CMS with Webflow",
