@@ -28,7 +28,7 @@ export const data = {
 	],
 	resume: {
 		skillmessage:
-			"I have developed superb in demand programming skills through BloomTech (AKA Lambda School), as well as, from various Udemy and other Massive Open Online Courses (MOOCs)",
+			"I have developed superb in demand programming skills through BloomTech (AKA Lambda School), Western Govenors University, as well as from various Udemy and other Massive Open Online Courses (MOOCs)",
 		education: [
 			{
 				school: "BloomTech (AKA Lamdba School)",
@@ -40,7 +40,7 @@ export const data = {
 			{
 				school: "Western Governer's University",
 				degree: "Bachelor of Science: Software Engineering",
-				graduated: "April 2023",
+				graduated: "July 2023",
 			},
 		],
 		work: [
@@ -68,7 +68,7 @@ export const data = {
 			{
 				company: "thesoftwareaccelerator.com",
 				title: "Founder/Content Creator",
-				years: "December 2020 - Current",
+				years: "December 2020 - June 2023",
 				description: [
 					"Maintained WordPress website",
 					"Engaged in professional development video casts to polish and learn new skills",
@@ -120,13 +120,6 @@ export const data = {
 	},
 	portfolio: {
 		projects: [
-			{
-				title: "Anywhere Fitness",
-				category:
-					"A fitness management app where instructors can post classes and students can sign up.",
-				image: "fitness.jpg",
-				url: "https://inspiring-jones-a91418.netlify.app/",
-			},
 			{
 				title: "Simon Game",
 				category: "Replica of the old Simon Game.",
@@ -180,12 +173,6 @@ export const data = {
 					"Utilized React, Auth0, Context API with Use Reducer, and Stripe API to make an e-commerce store",
 				image: "comfy.png",
 				url: "https://testing-comfy-jd.netlify.app/",
-			},
-			{
-				title: "ReduxGear",
-				category: "Utilized React and Redux to create a shopping cart",
-				image: "shopping_cart.png",
-				url: "https://brave-mirzakhani-b5600b.netlify.app",
 			},
 		],
 	},
