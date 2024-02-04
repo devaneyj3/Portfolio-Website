@@ -8,7 +8,7 @@ const Header = ({ data }) => {
 		social,
 		address: { state },
 	} = data;
-	const blog = "https://thesoftwareaccelerator.com";
+	const blog = "https://devtuneup.com";
 	const networks = social.map((network) => {
 		return (
 			<li key={network.name}>

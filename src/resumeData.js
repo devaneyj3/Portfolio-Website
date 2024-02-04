@@ -66,7 +66,7 @@ export const data = {
 				],
 			},
 			{
-				company: "thesoftwareaccelerator.com",
+				company: "devtuneup.com",
 				title: "Founder/Content Creator",
 				years: "December 2020 - June 2023",
 				description: [
