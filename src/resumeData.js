@@ -119,7 +119,7 @@ export const data = {
 		],
 	},
 	portfolio: {
-		projects: [
+		personal_projects: [
 			{
 				title: "Simon Game",
 				category: "Replica of the old Simon Game.",
@@ -173,6 +173,14 @@ export const data = {
 					"Utilized React, Auth0, Context API with Use Reducer, and Stripe API to make an e-commerce store",
 				image: "comfy.png",
 				url: "https://testing-comfy-jd.netlify.app/",
+			},
+		],
+		client_projects: [
+			{
+				title: "Goshen Hill Rental",
+				category: "Summer Rental Home Vacation Website.",
+				image: "goshen.png",
+				url: "https://phillipsjt71.wixsite.com/goshen-hill-rentals",
 			},
 		],
 	},

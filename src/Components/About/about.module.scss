@@ -1,0 +1,72 @@
+$about-background: #2b2b2b;
+$about-padding: 96px 0 66px; // shorthand for top, horizontal, bottom padding
+$text-color: #fff;
+$hover-color: #11abb0;
+$bio-text-color: #7a7a7a;
+$button-hover-background: #fff;
+$button-hover-text-color: #2b2b2b;
+$button-background: #444;
+$font-opensans: "opensans-bold", sans-serif;
+$profile-pic-border-radius: 100%;
+$contact-width: 41.66667%;
+$download-width: 58.33333%;
+$main-col-padding-right: 5%;
+
+.about {
+	background: $about-background;
+	padding: $about-padding;
+	overflow: hidden;
+
+	a,
+	a:visited {
+		color: $text-color;
+	}
+
+	a:hover,
+	a:focus {
+		color: $hover-color;
+	}
+
+	h2 {
+		font: 22px/30px $font-opensans;
+		color: $text-color;
+		margin-bottom: 12px;
+	}
+
+	p {
+		line-height: 30px;
+		color: $bio-text-color;
+	}
+
+	.profile-pic {
+		position: relative;
+		border-radius: $profile-pic-border-radius;
+	}
+
+	.contact-details {
+		width: $contact-width;
+	}
+
+	.download {
+		width: $download-width;
+		padding-top: 6px;
+
+		.button {
+			margin-top: 6px;
+			background: $button-background;
+			i {
+				margin-right: 15px;
+				font-size: 20px;
+			}
+
+			&:hover {
+				background: $button-hover-background;
+				color: $button-hover-text-color;
+			}
+		}
+	}
+
+	.main-col {
+		padding-right: $main-col-padding-right;
+	}
+}

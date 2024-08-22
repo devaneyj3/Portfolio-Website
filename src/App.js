@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { data } from "./resumeData";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import About from "./Components/About";
-import Resume from "./Components/Resume";
-import Contact from "./Components/Contact";
-import Portfolio from "./Components/Portfolio";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import About from "./Components/About/About";
+import Resume from "./Components/Resume/Resume";
+import Contact from "./Components/Contact/Contact";
+
+import PersonalPojects from "./Components/Projects/PersonalProjects/PersonalProjects";
+import ClientProjects from "./Components/Projects/ClientProjects/ClientProjects";
 
 const App = () => {
 	const [resumeData, setResumeData] = useState(data);
@@ -15,14 +17,15 @@ const App = () => {
 	}, []);
 
 	return (
-		<div className="App">
+		<main className="App">
 			<Header data={resumeData} />
 			<About data={resumeData} />
-			<Portfolio data={resumeData} />
+			<PersonalPojects data={resumeData} />
+			<ClientProjects data={resumeData} />
 			<Resume data={resumeData} />
 			<Contact data={resumeData} />
 			<Footer data={resumeData} />
-		</div>
+		</main>
 	);
 };
 

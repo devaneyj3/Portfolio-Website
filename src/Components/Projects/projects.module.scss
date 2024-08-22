@@ -1,0 +1,92 @@
+// portfolio.module.scss
+.portfolio {
+	background: #ebeeee;
+	padding-top: 90px;
+	padding-bottom: 60px;
+
+	h1 {
+		font: 15px/24px "opensans-semibold", sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-align: center;
+		margin-bottom: 48px;
+		color: #95a3a3;
+	}
+
+	.portfolioWrapper {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+
+		.columns {
+			margin-bottom: 36px;
+		}
+	}
+
+	.itemWrap {
+		background: #fff;
+		overflow: hidden;
+		position: relative;
+		transition: all 0.3s ease-in-out;
+
+		a {
+			display: block;
+			cursor: pointer;
+		}
+
+		.overlay {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+			background: url("../../../public/images/overlay-bg.png") repeat;
+		}
+
+		.linkIcon {
+			display: block;
+			color: #fff;
+			height: 30px;
+			width: 30px;
+			font-size: 18px;
+			line-height: 30px;
+			text-align: center;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -15px;
+			margin-top: -15px;
+		}
+
+		img {
+			vertical-align: bottom;
+		}
+
+		.portfolioItemMeta {
+			padding: 18px;
+			h5 {
+				font: 14px/21px "opensans-bold", sans-serif;
+				color: #fff;
+			}
+			p {
+				font: 12px/18px "opensans-light", sans-serif;
+				color: #c6c7c7;
+				margin-bottom: 0;
+			}
+		}
+
+		&:hover {
+			.overlay {
+				opacity: 1;
+			}
+			.linkIcon {
+				opacity: 1;
+			}
+		}
+	}
+}

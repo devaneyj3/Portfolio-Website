@@ -1,0 +1,117 @@
+$resume-link-color: #11abb0;
+$resume-link-hover-color: #313131;
+$resume-background-color: #fff;
+$resume-header-font: "opensans-bold", sans-serif;
+$resume-info-font: "librebaskerville-italic", serif;
+$resume-regular-font: "opensans-regular", sans-serif;
+
+.resume {
+	background: $resume-background-color;
+	padding-top: 90px;
+	padding-bottom: 72px;
+	overflow: hidden;
+
+	a,
+	a:visited {
+		color: $resume-link-color;
+	}
+
+	a:hover,
+	a:focus {
+		color: $resume-link-hover-color;
+	}
+
+	h1 {
+		font: 18px/24px $resume-header-font;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		span {
+			border-bottom: 3px solid $resume-link-color;
+			padding-bottom: 6px;
+		}
+	}
+
+	h3 {
+		font: 25px/30px $resume-header-font;
+	}
+
+	.header-col {
+		padding-top: 9px;
+	}
+
+	.main-col {
+		padding-right: 10%;
+	}
+
+	.education,
+	.work {
+		margin-bottom: 48px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid #e8e8e8;
+	}
+
+	.workList {
+		list-style: square;
+	}
+
+	.info {
+		font: 16px/24px $resume-info-font;
+		color: #6e7881;
+		margin-bottom: 18px;
+		margin-top: 9px;
+
+		span {
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+	}
+
+	.date {
+		font: 15px/24px $resume-regular-font;
+		margin-top: 6px;
+	}
+
+	.bars {
+		width: 95%;
+		float: left;
+		padding: 0;
+		text-align: left;
+
+		.skills {
+			margin-top: 36px;
+			list-style: none;
+		}
+
+		li {
+			position: relative;
+			margin-bottom: 60px;
+			background: #ccc;
+			height: 42px;
+			border-radius: 3px;
+
+			em {
+				font: 15px $resume-header-font;
+				color: #313131;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: normal;
+				position: relative;
+				top: -36px;
+			}
+
+			.bar-expand {
+				position: absolute;
+				left: 0;
+				top: 0;
+				margin: 0;
+				padding-right: 24px;
+				background: #313131;
+				display: inline-block;
+				height: 42px;
+				line-height: 42px;
+				border-radius: 3px 0 0 3px;
+			}
+		}
+	}
+}
