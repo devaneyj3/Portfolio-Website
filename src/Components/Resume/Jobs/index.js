@@ -3,7 +3,7 @@ import styles from "../work.module.scss";
 
 const Jobs = ({ jobs }) => {
 	return (
-		<section>
+		<section role="region" aria-label="Jobs">
 			{jobs.map((job) => (
 				<article key={job.company} className={styles.job}>
 					<h3>{job.company}</h3>

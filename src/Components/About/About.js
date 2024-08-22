@@ -7,7 +7,7 @@ const About = ({ data }) => {
 	const profilePic = `images/${image}`;
 
 	return (
-		<section className={styles.about}>
+		<section className={styles.about} role="region" aria-label="About Me">
 			<article className={styles.row}>
 				<div className={styles.threeColumns}>
 					<img
@@ -17,15 +17,11 @@ const About = ({ data }) => {
 					/>
 				</div>
 				<div className={styles.nineColumns}>
-					<header>
-						<h2>About Me</h2>
-					</header>
+					<h2>About Me</h2>
 					<p>{bio}</p>
 					<div className={styles.row}>
 						<div className={styles.contactDetails}>
-							<header>
-								<h2>Contact Details</h2>
-							</header>
+							<h2>Contact Details</h2>
 							<address>
 								<p className={styles.address}>
 									<span>{name}</span>

@@ -5,7 +5,7 @@ const Contact = ({ data }) => {
 	const { message } = data;
 
 	return (
-		<section className={styles.contact}>
+		<section className={styles.contact} role="form" aria-label="Get In Touch">
 			<div className={`row ${styles.sectionHead}`}>
 				<div className={`two columns ${styles.headerCol}`}>
 					<h2>Get In Touch.</h2>
@@ -23,7 +23,7 @@ const Contact = ({ data }) => {
 						method="post"
 						className={styles.contactForm}
 						name="contactForm"
-						aria-labelledby="contactFormHeading">
+						aria-label="Contact">
 						<fieldset>
 							<legend id="contactFormHeading">Contact Form</legend>
 

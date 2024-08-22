@@ -38,7 +38,10 @@ const PersonalProjects = ({ data }) => {
 	});
 
 	return (
-		<section className={styles.portfolio}>
+		<section
+			className={styles.portfolio}
+			role="region"
+			aria-label="Personal Projects">
 			<div className="row">
 				<div className="twelve columns collapsed">
 					<h2>Check Out Some of My Personal Projects</h2>

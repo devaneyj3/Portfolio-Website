@@ -29,7 +29,7 @@ const Resume = ({ data }) => {
 	));
 
 	return (
-		<section className={styles.resume}>
+		<section className={styles.resume} role="region" aria-label="Resume">
 			<div className={`${styles.row} ${styles.education}`}>
 				<div
 					className={`${styles.three} ${styles.columns} ${styles.headerCol}`}>

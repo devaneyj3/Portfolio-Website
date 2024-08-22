@@ -31,7 +31,7 @@ const ClientProjects = ({ data }) => {
 	});
 
 	return (
-		<section className={styles.portfolio}>
+		<section className={styles.portfolio} role="region" aria-label="Portfolio">
 			<div className="row">
 				<div className="twelve columns collapsed">
 					<h2>Check Out Some of My Client Projects</h2>

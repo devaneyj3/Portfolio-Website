@@ -18,7 +18,7 @@ const Footer = ({ data }) => {
 	));
 
 	return (
-		<footer className={styles.footer}>
+		<footer className={styles.footer} role="contentinfo" aria-label="Footer">
 			<div className={styles.row}>
 				<div className={styles.columns}>
 					<ul className={styles.socialLinks} aria-label="Social media links">

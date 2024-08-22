@@ -27,8 +27,8 @@ const Header = ({ data }) => {
 	));
 
 	return (
-		<header className={styles.header}>
-			<nav className={styles.wrap} aria-label="Main navigation">
+		<header className={styles.header} role="banner" aria-label="Header">
+			<nav className={styles.wrap}>
 				<ul className={styles.nav}>
 					<li className={styles.current}>
 						<a
