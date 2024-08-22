@@ -9,22 +9,27 @@ const PersonalProjects = ({ data }) => {
 		return (
 			<div
 				key={project.title}
-				className={`${styles.columns} ${styles.portfolioItem}`}>
-				<a href={project.url} title={project.title}>
+				className={`${styles.columns} ${styles.portfolioItem}`}
+				role="group"
+				aria-labelledby={`project-title-${project.title}`}>
+				<a
+					href={project.url}
+					title={project.title}
+					aria-label={`View project: ${project.title}`}>
 					<div className={styles.itemWrap}>
 						<img
 							className={styles.portfolioImage}
-							alt={project.title}
+							alt={`Screenshot of ${project.title}, a ${project.category} project`}
 							src={projectImage}
 						/>
 						<div className={styles.overlay}>
 							<div className={styles.portfolioItemMeta}>
-								<h3>{project.title}</h3>
+								<h3 id={`project-title-${project.title}`}>{project.title}</h3>
 								<p>{project.category}</p>
 							</div>
 						</div>
-						<div className={styles.linkIcon}>
-							<i className="fa fa-link"></i>
+						<div className={styles.linkIcon} aria-hidden="true">
+							<i className="fa fa-link" aria-label="External link icon"></i>
 						</div>
 					</div>
 				</a>
@@ -36,7 +41,7 @@ const PersonalProjects = ({ data }) => {
 		<section className={styles.portfolio}>
 			<div className="row">
 				<div className="twelve columns collapsed">
-					<h2>Check Out Some of My Personal Projects.</h2>
+					<h2>Check Out Some of My Personal Projects</h2>
 					<div className={styles.portfolioWrapper}>{projectsMap}</div>
 				</div>
 			</div>

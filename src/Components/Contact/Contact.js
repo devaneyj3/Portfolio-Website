@@ -8,13 +8,11 @@ const Contact = ({ data }) => {
 		<section className={styles.contact}>
 			<div className={`row ${styles.sectionHead}`}>
 				<div className={`two columns ${styles.headerCol}`}>
-					<h2>
-						<span>Get In Touch.</span>
-					</h2>
+					<h2>Get In Touch.</h2>
 				</div>
 
 				<div className={`ten columns`}>
-					<p className={`${styles.lead}`}>{message}</p>
+					<p className={styles.lead}>{message}</p>
 				</div>
 			</div>
 
@@ -24,18 +22,21 @@ const Contact = ({ data }) => {
 						action=""
 						method="post"
 						className={styles.contactForm}
-						name="contactForm">
+						name="contactForm"
+						aria-labelledby="contactFormHeading">
 						<fieldset>
+							<legend id="contactFormHeading">Contact Form</legend>
+
 							<div>
 								<label htmlFor="contactName">
 									Name <span className={styles.required}>*</span>
 								</label>
 								<input
 									type="text"
-									defaultValue=""
-									size="35"
 									id="contactName"
 									name="contactName"
+									aria-required="true"
+									required
 								/>
 							</div>
 
@@ -44,23 +45,17 @@ const Contact = ({ data }) => {
 									Email <span className={styles.required}>*</span>
 								</label>
 								<input
-									type="text"
-									defaultValue=""
-									size="35"
+									type="email"
 									id="contactEmail"
 									name="contactEmail"
+									aria-required="true"
+									required
 								/>
 							</div>
 
 							<div>
 								<label htmlFor="contactSubject">Subject</label>
-								<input
-									type="text"
-									defaultValue=""
-									size="35"
-									id="contactSubject"
-									name="contactSubject"
-								/>
+								<input type="text" id="contactSubject" name="contactSubject" />
 							</div>
 
 							<div>
@@ -68,24 +63,33 @@ const Contact = ({ data }) => {
 									Message <span className={styles.required}>*</span>
 								</label>
 								<textarea
-									cols="50"
-									rows="15"
 									id="contactMessage"
-									name="contactMessage"></textarea>
+									name="contactMessage"
+									rows="5"
+									aria-required="true"
+									required></textarea>
 							</div>
 
 							<div>
-								<button className={styles.submit}>Submit</button>
+								<button
+									type="submit"
+									className={styles.submit}
+									aria-label="Submit Contact Form">
+									Submit
+								</button>
 								<span className={styles.imageLoader}>
-									<img alt="" src="images/loader.gif" />
+									<img src="images/loader.gif" alt="Loading" />
 								</span>
 							</div>
 						</fieldset>
 					</form>
 
-					<div className={styles.messageWarning}> Error boy</div>
-					<div className={styles.messageSuccess}>
-						<i className="fa fa-check"></i>Your message was sent, thank you!
+					<div className={styles.messageWarning} aria-live="polite">
+						Error boy
+					</div>
+					<div className={styles.messageSuccess} aria-live="polite">
+						<i className="fa fa-check" aria-hidden="true"></i>
+						Your message was sent, thank you!
 						<br />
 					</div>
 				</div>

@@ -8,12 +8,15 @@ const ClientProjects = ({ data }) => {
 		const projectImage = "images/portfolio/" + project.image;
 		return (
 			<div key={project.title} className={styles.portfolio__item}>
-				<a href={project.url} title={project.title}>
+				<a
+					href={project.url}
+					title={project.title}
+					aria-label={`View project: ${project.title}`}>
 					<div className={styles.item__wrap}>
 						<img
 							className={styles.image}
-							alt={project.title}
 							src={projectImage}
+							alt={`Screenshot of ${project.title}, a ${project.category} project`}
 						/>
 						<div className={styles.overlay}>
 							<div className={styles.meta}>
@@ -31,7 +34,7 @@ const ClientProjects = ({ data }) => {
 		<section className={styles.portfolio}>
 			<div className="row">
 				<div className="twelve columns collapsed">
-					<h2>Check Out Some My Client Projects.</h2>
+					<h2>Check Out Some of My Client Projects</h2>
 					<div className={`${styles.portfolio__wrapper} cf`}>{projectsMap}</div>
 				</div>
 			</div>

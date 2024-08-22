@@ -4,46 +4,53 @@ import styles from "./about.module.scss"; // Ensure the path is correct based on
 
 const About = ({ data }) => {
 	const { name, bio, phone, email, image } = data;
-	let profilepic = "images/" + image;
+	const profilePic = `images/${image}`;
 
 	return (
 		<section className={styles.about}>
-			<div className={styles.row}>
+			<article className={styles.row}>
 				<div className={styles.threeColumns}>
 					<img
 						className={styles.profilePic}
-						src={profilepic}
-						alt="Jordan Devaney Pic"
+						src={profilePic}
+						alt={`Profile picture of ${name}`}
 					/>
 				</div>
 				<div className={styles.nineColumns}>
-					<h2>About Me</h2>
+					<header>
+						<h2>About Me</h2>
+					</header>
 					<p>{bio}</p>
 					<div className={styles.row}>
 						<div className={styles.contactDetails}>
-							<h2>Contact Details</h2>
-							<p className={styles.address}>
-								<span>{name}</span>
-								<br />
-								<span>{phone}</span>
-								<br />
-								<span>{email}</span>
-							</p>
+							<header>
+								<h2>Contact Details</h2>
+							</header>
+							<address>
+								<p className={styles.address}>
+									<span>{name}</span>
+									<br />
+									<span>{phone}</span>
+									<br />
+									<span>{email}</span>
+								</p>
+							</address>
 						</div>
 						<div className={styles.download}>
 							<p>
 								<a
 									href={resume}
 									className={styles.button}
-									download="resume.pdf">
-									<i className="fa fa-download"></i>
+									download="resume.pdf"
+									aria-label="Download Resume">
+									<i className="fa fa-download" aria-hidden="true"></i>
 									Download Resume
 								</a>
 							</p>
 						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 	);
 };
