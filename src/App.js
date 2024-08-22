@@ -13,15 +13,17 @@ import ClientProjects from "./Components/Projects/ClientProjects/ClientProjects"
 const App = () => {
 	const [resumeData] = useState(data);
 	return (
-		<main className="App" role="main">
+		<>
 			<Header data={resumeData} role="banner" />
-			<About data={resumeData} role="region" />
-			<PersonalProjects data={resumeData} role="region" />
-			<ClientProjects data={resumeData} role="region" />
-			<Resume data={resumeData} role="region" />
-			<Contact data={resumeData} role="form" />
+			<main className="App">
+				<About data={resumeData} role="region" />
+				<PersonalProjects data={resumeData} role="region" />
+				<ClientProjects data={resumeData} role="region" />
+				<Resume data={resumeData} role="region" />
+				<Contact data={resumeData} role="form" />
+			</main>
 			<Footer data={resumeData} role="contentinfo" />
-		</main>
+		</>
 	);
 };
 

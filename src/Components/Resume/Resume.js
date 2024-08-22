@@ -1,5 +1,4 @@
 import React from "react";
-
 import Jobs from "./Jobs";
 import styles from "./work.module.scss"; // Ensure this path matches your project structure
 
@@ -11,7 +10,9 @@ const Resume = ({ data }) => {
 			<h3>{edu.school}</h3>
 			<p className={styles.info}>
 				{edu.degree} <span>&bull;</span>
-				<em className={styles.date}>{edu.graduated}</em>
+				<time className={styles.date} dateTime={edu.graduated}>
+					{edu.graduated}
+				</time>
 			</p>
 			<p>{edu.description}</p>
 		</article>
@@ -29,7 +30,7 @@ const Resume = ({ data }) => {
 	));
 
 	return (
-		<section className={styles.resume} role="region" aria-label="Resume">
+		<section className={styles.resume} aria-label="Resume">
 			<div className={`${styles.row} ${styles.education}`}>
 				<div
 					className={`${styles.three} ${styles.columns} ${styles.headerCol}`}>

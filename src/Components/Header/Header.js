@@ -27,7 +27,7 @@ const Header = ({ data }) => {
 	));
 
 	return (
-		<header className={styles.header} role="banner" aria-label="Header">
+		<header className={styles.header}>
 			<nav className={styles.wrap}>
 				<ul className={styles.nav}>
 					<li className={styles.current}>
@@ -80,16 +80,13 @@ const Header = ({ data }) => {
 						I'm a {state} based <span>{occupation}</span>. {description}.
 					</p>
 					<hr />
-					<ul className={styles.social} aria-label="Social media links">
-						{networks}
-					</ul>
+					<ul className={styles.social}>{networks}</ul>
 				</div>
 				<a
 					href={blog}
 					target="_blank"
 					rel="noopener noreferrer"
 					className={styles.blogBtn}
-					role="button"
 					aria-label="Read my blog">
 					Read My Blog
 				</a>

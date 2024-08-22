@@ -7,46 +7,37 @@ const About = ({ data }) => {
 	const profilePic = `images/${image}`;
 
 	return (
-		<section className={styles.about} role="region" aria-label="About Me">
-			<article className={styles.row}>
-				<div className={styles.threeColumns}>
-					<img
-						className={styles.profilePic}
-						src={profilePic}
-						alt={`Profile picture of ${name}`}
-					/>
-				</div>
-				<div className={styles.nineColumns}>
-					<h2>About Me</h2>
-					<p>{bio}</p>
-					<div className={styles.row}>
-						<div className={styles.contactDetails}>
-							<h2>Contact Details</h2>
-							<address>
-								<p className={styles.address}>
-									<span>{name}</span>
-									<br />
-									<span>{phone}</span>
-									<br />
-									<span>{email}</span>
-								</p>
-							</address>
-						</div>
-						<div className={styles.download}>
-							<p>
-								<a
-									href={resume}
-									className={styles.button}
-									download="resume.pdf"
-									aria-label="Download Resume">
-									<i className="fa fa-download" aria-hidden="true"></i>
-									Download Resume
-								</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</article>
+		<section className={styles.about} aria-labelledby="aboutMe">
+			<figure className={styles.profileWrapper}>
+				<img
+					className={styles.profilePic}
+					src={profilePic}
+					alt={`Profile picture of ${name}`}
+				/>
+				<figcaption>{name}</figcaption>
+			</figure>
+			<div className={styles.content}>
+				<h2 id="aboutMe">About Me</h2>
+				<p>{bio}</p>
+				<h2 id="contactDetails">Contact Details</h2>
+				<address>
+					<p className={styles.address}>
+						<span>{name}</span>
+						<br />
+						<span>{phone}</span>
+						<br />
+						<span>{email}</span>
+					</p>
+				</address>
+				<a
+					href={resume}
+					className={styles.button}
+					download="resume.pdf"
+					aria-label="Download Resume">
+					<i className="fa fa-download" aria-hidden="true"></i>
+					Download Resume
+				</a>
+			</div>
 		</section>
 	);
 };

@@ -5,46 +5,42 @@ const PersonalProjects = ({ data }) => {
 	const { personal_projects } = data.portfolio;
 
 	const projectsMap = personal_projects.map((project) => {
-		const projectImage = "../../../images/portfolio/" + project.image;
+		const projectImage = `../../../images/portfolio/${project.image}`;
 		return (
-			<div
+			<article
 				key={project.title}
-				className={`${styles.columns} ${styles.portfolioItem}`}
-				role="group"
-				aria-labelledby={`project-title-${project.title}`}>
+				className={`${styles.columns} ${styles.portfolioItem}`}>
 				<a
 					href={project.url}
-					title={project.title}
+					title={`View project: ${project.title}`}
 					aria-label={`View project: ${project.title}`}>
-					<div className={styles.itemWrap}>
+					<figure className={styles.itemWrap}>
 						<img
 							className={styles.portfolioImage}
 							alt={`Screenshot of ${project.title}, a ${project.category} project`}
 							src={projectImage}
 						/>
-						<div className={styles.overlay}>
+						<figcaption className={styles.overlay}>
 							<div className={styles.portfolioItemMeta}>
-								<h3 id={`project-title-${project.title}`}>{project.title}</h3>
+								<h3>{project.title}</h3>
 								<p>{project.category}</p>
 							</div>
-						</div>
-						<div className={styles.linkIcon} aria-hidden="true">
-							<i className="fa fa-link" aria-label="External link icon"></i>
-						</div>
-					</div>
+						</figcaption>
+					</figure>
 				</a>
-			</div>
+			</article>
 		);
 	});
 
 	return (
 		<section
 			className={styles.portfolio}
-			role="region"
-			aria-label="Personal Projects">
+			aria-labelledby="personalProjectsHeading">
 			<div className="row">
 				<div className="twelve columns collapsed">
-					<h2>Check Out Some of My Personal Projects</h2>
+					<h2 id="personalProjectsHeading">
+						Check Out Some of My Personal Projects
+					</h2>
 					<div className={styles.portfolioWrapper}>{projectsMap}</div>
 				</div>
 			</div>

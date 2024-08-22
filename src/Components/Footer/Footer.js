@@ -18,16 +18,12 @@ const Footer = ({ data }) => {
 	));
 
 	return (
-		<footer className={styles.footer} role="contentinfo" aria-label="Footer">
+		<footer className={styles.footer} aria-label="Footer">
 			<div className={styles.row}>
 				<div className={styles.columns}>
-					<ul className={styles.socialLinks} aria-label="Social media links">
-						{networksMap}
-					</ul>
+					<ul className={styles.socialLinks}>{networksMap}</ul>
 
-					<ul
-						className={styles.copyRight}
-						aria-label="Footer copyright and design credits">
+					<ul className={styles.copyRight}>
 						<li>&copy; 2021 Jordan Devaney</li>
 						<li>
 							Design by{" "}
