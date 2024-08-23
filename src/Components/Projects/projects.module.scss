@@ -1,92 +1,95 @@
-// portfolio.module.scss
 .portfolio {
 	background: #ebeeee;
-	padding-top: 90px;
+	padding-top: 60px;
 	padding-bottom: 60px;
+	text-align: center;
 
-	h1 {
-		font: 15px/24px "opensans-semibold", sans-serif;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		text-align: center;
+	h2 {
+		font-size: 1.5rem;
 		margin-bottom: 48px;
 		color: #95a3a3;
+		text-transform: uppercase;
+		letter-spacing: 1px;
 	}
 
-	.portfolioWrapper {
+	&__wrapper {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		align-items: center;
-
-		.columns {
-			margin-bottom: 36px;
-		}
+		gap: 20px;
 	}
 
-	.itemWrap {
+	&__item {
+		flex: 1 1 calc(33.333% - 20px);
+		max-width: calc(33.333% - 20px);
 		background: #fff;
+		border-radius: 8px;
 		overflow: hidden;
 		position: relative;
-		transition: all 0.3s ease-in-out;
-
-		a {
-			display: block;
-			cursor: pointer;
-		}
-
-		.overlay {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-			transition: opacity 0.3s ease-in-out;
-			background: url("../../../public/images/overlay-bg.png") repeat;
-		}
-
-		.linkIcon {
-			display: block;
-			color: #fff;
-			height: 30px;
-			width: 30px;
-			font-size: 18px;
-			line-height: 30px;
-			text-align: center;
-			opacity: 0;
-			transition: opacity 0.3s ease-in-out;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-left: -15px;
-			margin-top: -15px;
-		}
-
-		img {
-			vertical-align: bottom;
-		}
-
-		.portfolioItemMeta {
-			padding: 18px;
-			h5 {
-				font: 14px/21px "opensans-bold", sans-serif;
-				color: #fff;
-			}
-			p {
-				font: 12px/18px "opensans-light", sans-serif;
-				color: #c6c7c7;
-				margin-bottom: 0;
-			}
-		}
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
 			.overlay {
 				opacity: 1;
 			}
-			.linkIcon {
-				opacity: 1;
-			}
 		}
+
+		@media (max-width: 1024px) {
+			flex: 1 1 calc(50% - 20px);
+			max-width: calc(50% - 20px);
+		}
+
+		@media (max-width: 768px) {
+			flex: 1 1 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+.item__wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.meta {
+	color: #fff;
+	text-align: center;
+
+	h3 {
+		font-size: 1.25rem;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 1rem;
+		margin: 0;
 	}
 }
