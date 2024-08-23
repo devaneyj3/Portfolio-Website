@@ -45,6 +45,18 @@ export const data = {
 		],
 		work: [
 			{
+				company: "AG Usa",
+				title: "Web Developer",
+				years: "May 2024 - Present",
+				description: [
+					"Utilize a custom app with NextJS with the Shopify API",
+					"Automate reports with Python and Pandas",
+					"Handle integrations of eCommerce store to Shopify",
+					"Utilize Trello for Project Management and task ideas",
+					"Help brainstrom ideas to streamline effeciency",
+				],
+			},
+			{
 				company: "The Web Accelerator",
 				title: "Founder/React Developer",
 				years: "Feb 2022 - Present",
