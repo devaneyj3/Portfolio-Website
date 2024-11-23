@@ -7,7 +7,7 @@ export const data = {
 	bio: "I am a Full Stack Web Developer passionate about solving complex problems and making great websites that will benefit the client. I am determined to serve you with my skills and meet your need.",
 	message: "Can I help you on your next project? Let's chat.",
 	email: "jordandevaney28@gmail.com",
-	phone: "810-220-9256",
+	phone: "810-772-0086",
 	address: {
 		street: "351 Emerald Ct E",
 		city: "Whitmore Lake",
@@ -50,8 +50,8 @@ export const data = {
 				years: "May 2024 - Present",
 				description: [
 					"Utilize a custom app with NextJS with the Shopify API",
-					"Automate reports with Python and Pandas",
-					"Handle integrations of eCommerce store to Shopify",
+					"Automate tonnage reports with Python and Pandas",
+					"Handle integrations of multiple API's with Shopify",
 					"Utilize Trello for Project Management and task ideas",
 					"Help brainstrom ideas to streamline effeciency",
 				],
@@ -188,6 +188,12 @@ export const data = {
 			},
 		],
 		client_projects: [
+			{
+				title: "Max Goodness",
+				category: "Sales website created for Max-Well a subsidary of AG-USA",
+				image: "maxgoodness.png",
+				url: "https://maxgoodness.com",
+			},
 			{
 				title: "Goshen Hill Rental",
 				category: "Summer Rental Home Vacation Website.",

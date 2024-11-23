@@ -14,29 +14,34 @@ const About = ({ data }) => {
 					src={profilePic}
 					alt={`Profile picture of ${name}`}
 				/>
-				<figcaption>{name}</figcaption>
 			</figure>
 			<div className={styles.content}>
-				<h2 id="aboutMe">About Me</h2>
-				<p>{bio}</p>
-				<h2 id="contactDetails">Contact Details</h2>
-				<address>
-					<p className={styles.address}>
-						<span>{name}</span>
-						<br />
-						<span>{phone}</span>
-						<br />
-						<span>{email}</span>
-					</p>
-				</address>
-				<a
-					href={resume}
-					className={styles.button}
-					download="resume.pdf"
-					aria-label="Download Resume">
-					<i className="fa fa-download" aria-hidden="true"></i>
-					Download Resume
-				</a>
+				<div className={styles.aboutMe}>
+					<h2 id="aboutMe">About Me</h2>
+					<p>{bio}</p>
+				</div>
+				<section className={styles.contactDetails}>
+					<h2 id="contactDetails">Contact Details</h2>
+					<address>
+						<p className={styles.address}>
+							<span>{name}</span>
+							<br />
+							<span>{phone}</span>
+							<br />
+							<span>{email}</span>
+						</p>
+					</address>
+				</section>
+				<div className={styles.download}>
+					<a
+						href={resume}
+						className={styles.button}
+						download="resume.pdf"
+						aria-label="Download Resume">
+						<i className="fa fa-download" aria-hidden="true"></i>
+						Download Resume
+					</a>
+				</div>
 			</div>
 		</section>
 	);

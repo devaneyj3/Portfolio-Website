@@ -9,15 +9,14 @@ const Header = ({ data }) => {
 		social,
 		address: { state },
 	} = data;
-	const blog = "https://devtuneup.com";
 
 	// Map social networks to list items with accessibility enhancements
 	const networks = social.map((network) => (
 		<li key={network.name} className={styles.socialLink}>
 			<a
 				href={network.url}
-				aria-label={`Follow us on ${network.name}`}
-				title={`Follow us on ${network.name}`}>
+				aria-label={`Follow me on ${network.name}`}
+				title={`Follow me on ${network.name}`}>
 				<i
 					className={`${network.className} ${styles.icon}`}
 					aria-hidden="true"></i>
@@ -82,14 +81,6 @@ const Header = ({ data }) => {
 					<hr />
 					<ul className={styles.social}>{networks}</ul>
 				</div>
-				<a
-					href={blog}
-					target="_blank"
-					rel="noopener noreferrer"
-					className={styles.blogBtn}
-					aria-label="Read my blog">
-					Read My Blog
-				</a>
 			</div>
 
 			<p className={styles.scrolldown}>

@@ -97,69 +97,6 @@ section {
 	display: block;
 }
 
-audio,
-canvas,
-video {
-	display: inline-block;
-}
-
-audio:not([controls]) {
-	display: none;
-	height: 0;
-}
-
-[hidden] {
-	display: none;
-}
-
-code,
-kbd,
-pre,
-samp {
-	font-family: monospace, serif;
-	font-size: 1em;
-}
-
-pre {
-	white-space: pre;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-}
-
-blockquote,
-q {
-	quotes: #8220 #8220;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
-}
-
-ins {
-	background-color: #ff9;
-	color: #000;
-	text-decoration: none;
-}
-
-mark {
-	background-color: #a7f4f6;
-	color: #555;
-}
-
-del {
-	text-decoration: line-through;
-}
-
-abbr[title],
-dfn[title] {
-	border-bottom: 1px dotted;
-	cursor: help;
-}
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -191,13 +128,9 @@ html {
 }
 
 body {
-	background: #fff;
 	font-family: "opensans-regular", sans-serif;
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 30px;
 	color: #838c95;
-
-	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-webkit-text-size-adjust: 100%;
 }

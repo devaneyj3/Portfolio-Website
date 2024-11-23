@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { data } from "./resumeData";
 
+import styles from "./app.module.scss";
+
 // component imports
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
@@ -15,7 +17,7 @@ const App = () => {
 	return (
 		<>
 			<Header data={resumeData} role="banner" />
-			<main className="App">
+			<main className={styles.app}>
 				<About data={resumeData} role="region" />
 				<PersonalProjects data={resumeData} role="region" />
 				<ClientProjects data={resumeData} role="region" />

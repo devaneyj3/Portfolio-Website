@@ -8,47 +8,57 @@ $button-hover-text-color: #2b2b2b;
 $button-background: #444;
 $font-opensans: "opensans-bold", sans-serif;
 $profile-pic-border-radius: 100%;
-$contact-width: 41.66667%;
-$download-width: 58.33333%;
-$main-col-padding-right: 5%;
 
 .about {
 	background: $about-background;
 	padding: $about-padding;
 	overflow: hidden;
-
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
 	a,
 	a:visited {
 		color: $text-color;
 	}
-
+	
 	a:hover,
 	a:focus {
 		color: $hover-color;
 	}
-
+	
 	h2 {
 		font: 22px/30px $font-opensans;
 		color: $text-color;
 		margin-bottom: 12px;
 	}
-
+	
 	p {
 		line-height: 30px;
 		color: $bio-text-color;
 	}
+	.profileWrapper {
 
+		padding: 50px;
+	}
 	.profilePic {
-		position: relative;
+		height: 500px;
 		border-radius: $profile-pic-border-radius;
 	}
 
-	.contact-details {
-		width: $contact-width;
+	.content {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		.contactDetails {
+			
+		}
 	}
 
+
 	.download {
-		width: $download-width;
 		padding-top: 6px;
 
 		.button {
@@ -66,7 +76,4 @@ $main-col-padding-right: 5%;
 		}
 	}
 
-	.main-col {
-		padding-right: $main-col-padding-right;
-	}
 }
