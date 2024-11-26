@@ -1,145 +1,124 @@
+// Variables
+$primary-color: #2980b9; // Vibrant blue
+$secondary-color: #ecf0f1; // Light gray
+$accent-color: #e74c3c; // Bold red for accents
+$text-color: #333;
+$font-family: 'Roboto', sans-serif; // Modern sans-serif font
+
 .contact {
-	background: #191919;
-	padding-top: 96px;
-	padding-bottom: 102px;
-	color: #636363;
+  background-color: $secondary-color;
+  padding: 30px;
+  font-family: $font-family;
+  color: $text-color;
 
-	.sectionHead {
-		margin-bottom: 42px;
-	}
+  h2 {
+    color: $primary-color;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center; 
+  }
 
-	a,
-	a:visited {
-		color: #11abb0;
-	}
+  .lead {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    text-align: center; 
+  }
 
-	a:hover,
-	a:focus {
-		color: #fff;
-	}
+  .contactForm {
+    max-width: 600px; 
+    margin: 0 auto; 
 
-	h1 {
-		font: 18px/24px "opensans-bold", sans-serif;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		color: #ebeeee;
-		margin-bottom: 6px;
-	}
+    fieldset {
+      border: none; 
+      padding: 0; 
 
-	h4 {
-		font: 16px/24px "opensans-bold", sans-serif;
-		color: #ebeeee;
-		margin-bottom: 6px;
-	}
+      legend {
+        display: none; 
+      }
 
-	.lead {
-		font: 18px/36px "opensans-light", sans-serif;
-		padding-right: 3%;
-	}
+      div {
+        margin-bottom: 1.5rem;
 
-	.headerCol {
-		padding-top: 6px;
-	}
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
 
-	form {
-		margin-bottom: 30px;
-	}
+          .required {
+            color: $accent-color;
+          }
+        }
 
-	label {
-		font: 15px/24px "opensans-bold", sans-serif;
-		margin: 12px 0;
-		color: #ebeeee;
-		display: inline-block;
-		float: left;
-		width: 26%;
-	}
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          font-size: 1rem;
 
-	input,
-	textarea,
-	select {
-		padding: 18px 20px;
-		color: #eee;
-		background: #373233;
-		margin-bottom: 42px;
-		border: 0;
-		outline: none;
-		font-size: 15px;
-		line-height: 24px;
-		width: 65%;
-	}
+          &:focus {
+            outline: none; 
+            border-color: $primary-color; 
+            box-shadow: 0 0 5px rgba($primary-color, 0.3); 
+          }
+        }
 
-	input:focus,
-	textarea:focus,
-	select:focus {
-		color: #fff;
-		background-color: #11abb0;
-	}
+        textarea {
+          resize: vertical; 
+        }
+      }
 
-	.submit {
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		color: #fff;
-		background: #0d0d0d;
-		border: none;
-		cursor: pointer;
-		height: auto;
-		display: inline-block;
-		border-radius: 3px;
-		margin-left: 26%;
+      .submit {
+        background-color: $primary-color;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
 
-		&:hover {
-			color: #0d0d0d;
-			background: #fff;
-		}
-	}
+        &:hover {
+          background-color: darken($primary-color, 10%); 
+        }
+      }
 
-	.required {
-		color: #11abb0;
-		font-size: 13px;
-	}
+      .imageLoader {
+        display: none; // Hide the loader initially
+        margin-left: 10px; 
 
-	.messageWarning,
-	.messageSuccess {
-		display: none;
-		background: #0f0f0f;
-		padding: 24px 24px;
-		margin-bottom: 36px;
-		width: 65%;
-		margin-left: 26%;
+        img {
+          width: 30px; 
+          vertical-align: middle; 
+        }
+      }
+    }
+  }
 
-		&.messageWarning {
-			color: #d72828;
-		}
+  .messageWarning,
+  .messageSuccess {
+    text-align: center; 
+    margin-top: 1rem; 
+    font-weight: bold;
+    padding: 10px; 
+    border-radius: 5px; 
+  }
 
-		&.messageSuccess {
-			color: #11abb0;
-		}
-	}
+  .messageWarning {
+    color: $accent-color; 
+    background-color: lighten($accent-color, 40%); 
+    border: 1px solid lighten($accent-color, 20%); 
+  }
 
-	.imageLoader {
-		display: none;
-		position: relative;
-		left: 18px;
-		top: 17px;
-	}
+  .messageSuccess {
+    color: #27ae60; // Green color for success
+    background-color: lighten(#27ae60, 40%);
+    border: 1px solid lighten(#27ae60, 20%);
 
-	.twitter {
-		margin-top: 12px;
-		padding: 0;
-
-		li {
-			margin: 6px 0px 12px 0;
-			line-height: 30px;
-
-			span {
-				display: block;
-			}
-
-			b a {
-				font: 13px/36px "opensans-regular", sans-serif;
-				color: #474747 !important;
-				border: none;
-			}
-		}
-	}
+    i {
+      margin-right: 5px; 
+    }
+  }
 }

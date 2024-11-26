@@ -1,6 +1,6 @@
 import React from "react";
 import Jobs from "./Jobs";
-import styles from "./work.module.scss"; // Ensure this path matches your project structure
+import styles from "./work.module.scss";
 
 const Resume = ({ data }) => {
 	const { skillmessage, education, work, skills } = data.resume;
@@ -20,47 +20,42 @@ const Resume = ({ data }) => {
 
 	const skillsMap = skills.map((skill) => (
 		<li key={skill.name} className={styles.skill}>
-			<p
-				style={{ width: skill.level }}
-				className={`${styles.barExpand} ${skill.name.toLowerCase()}`}
-				aria-label={`${skill.name} skill level`}
-				role="note"></p>
-			<em>{skill.name}</em>
+			<div className={styles.skillBar}>
+				<div
+					className={styles.skillFill}
+					style={{ width: skill.level }}
+					aria-label={`${skill.name} skill level`}
+					role="progressbar"></div>
+				<span className={styles.skillName}>{skill.name}</span>
+			</div>
 		</li>
 	));
 
 	return (
 		<section className={styles.resume} aria-label="Resume">
-			<div className={`${styles.row} ${styles.education}`}>
-				<div
-					className={`${styles.three} ${styles.columns} ${styles.headerCol}`}>
-					<h2 id="education">Education</h2>
-				</div>
-				<div className={`${styles.nine} ${styles.columns} ${styles.mainCol}`}>
-					<div className={styles.item}>{educationMap}</div>
-				</div>
+			<div className={styles.section}>
+				<h2 className={styles.sectionTitle} id="education">
+					Education
+				</h2>
+				<div className={styles.content}>{educationMap}</div>
 			</div>
 
-			<div className={`${styles.row} ${styles.work}`}>
-				<div
-					className={`${styles.three} ${styles.columns} ${styles.headerCol}`}>
-					<h2 id="work">Work Experience</h2>
-				</div>
-				<div className={`${styles.nine} ${styles.columns} ${styles.mainCol}`}>
+			<div className={styles.section}>
+				<h2 className={styles.sectionTitle} id="work">
+					Work Experience
+				</h2>
+				<div className={styles.content}>
 					<Jobs jobs={work} />
 				</div>
 			</div>
 
-			<div className={`${styles.row} ${styles.skill}`}>
-				<div
-					className={`${styles.three} ${styles.columns} ${styles.headerCol}`}>
-					<h2 id="skills">Skills</h2>
-				</div>
-				<div className={`${styles.nine} ${styles.columns} ${styles.mainCol}`}>
+			<div className={styles.section}>
+				<h2 className={styles.sectionTitle} id="skills">
+					Skills
+				</h2>
+				<div className={styles.content}>
 					<p>{skillmessage}</p>
-					<div className={styles.bars}>
-						<ul className={styles.skills}>{skillsMap}</ul>
-					</div>
+					<ul className={styles.skillsList}>{skillsMap}</ul>
 				</div>
 			</div>
 		</section>

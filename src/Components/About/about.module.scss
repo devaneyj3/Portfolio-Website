@@ -1,79 +1,80 @@
-$about-background: #2b2b2b;
-$about-padding: 96px 0 66px; // shorthand for top, horizontal, bottom padding
-$text-color: #fff;
-$hover-color: #11abb0;
-$bio-text-color: #7a7a7a;
-$button-hover-background: #fff;
-$button-hover-text-color: #2b2b2b;
-$button-background: #444;
-$font-opensans: "opensans-bold", sans-serif;
-$profile-pic-border-radius: 100%;
+// Variables
+$primary-color: #2980b9; // Vibrant blue
+$secondary-color: #ecf0f1; // Light gray
+$accent-color: #e74c3c; // Bold red for accents
+$text-color: #333;
+$font-family: 'Roboto', sans-serif; // Modern sans-serif font
+
 
 .about {
-	background: $about-background;
-	padding: $about-padding;
-	overflow: hidden;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	
-	a,
-	a:visited {
-		color: $text-color;
-	}
-	
-	a:hover,
-	a:focus {
-		color: $hover-color;
-	}
-	
-	h2 {
-		font: 22px/30px $font-opensans;
-		color: $text-color;
-		margin-bottom: 12px;
-	}
-	
-	p {
-		line-height: 30px;
-		color: $bio-text-color;
-	}
-	.profileWrapper {
+  background-color: $secondary-color;
+  padding: 30px;
+  font-family: $font-family;
+  color: $text-color;
+  display: flex; // Use flexbox for layout
+  align-items: center; // Vertically align items
 
-		padding: 50px;
-	}
-	.profilePic {
-		height: 500px;
-		border-radius: $profile-pic-border-radius;
-	}
+  .profileWrapper {
+    margin-right: 30px; // Space between image and content
 
-	.content {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+    .profilePic {
+      width: 200px; 
+      border-radius: 50%; 
+      object-fit: cover; 
+      border: 5px solid $primary-color; // Add a border to the image
+    }
+  }
 
-		.contactDetails {
-			
-		}
-	}
+  .content {
+    h2 {
+      color: $primary-color;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6; 
+      color: #7f8c8d; 
+    }
 
-	.download {
-		padding-top: 6px;
+    .contactDetails {
+      margin-top: 2rem; 
 
-		.button {
-			margin-top: 6px;
-			background: $button-background;
-			i {
-				margin-right: 15px;
-				font-size: 20px;
-			}
+      address {
+        .address {
+          span {
+            display: block; 
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
 
-			&:hover {
-				background: $button-hover-background;
-				color: $button-hover-text-color;
-			}
-		}
-	}
+    .download {
+      margin-top: 2rem;
 
+      .button {
+        background-color: $primary-color;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-decoration: none; 
+        display: inline-flex; // Use inline-flex to align icon and text
+        align-items: center; 
+        transition: background-color 0.3s ease; 
+
+        &:hover {
+          background-color: darken($primary-color, 10%); 
+        }
+
+        i {
+          margin-right: 8px; 
+        }
+      }
+    }
+  }
 }

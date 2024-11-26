@@ -1,120 +1,93 @@
-// Assuming the file is named Nav.module.scss
-
-.wrap {
-	font: 12px "opensans-bold", sans-serif;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	text-transform: uppercase;
-	letter-spacing: 2.5px;
-
-	ul {
-		&.opaque {
-			background-color: #333;
-		}
-	}
-}
-
-.nav {
-	li {
-		position: relative;
-		height: 48px;
-		display: inline-block;
-
-		a {
-			display: inline-block;
-			padding: 8px 13px;
-			line-height: 32px;
-			text-decoration: none;
-			text-align: left;
-			color: #fff;
-
-			transition: color 0.2s ease-in-out;
-
-			&:active {
-				background-color: transparent !important;
-			}
-
-			&.current {
-				color: #f06000;
-			}
-		}
-	}
-}
+// Variables
+$primary-color: #2980b9; // Vibrant blue
+$secondary-color: #ecf0f1; // Light gray
+$accent-color: #e74c3c; // Bold red for accents
+$text-color: #333;
+$font-family: 'Roboto', sans-serif; // Modern sans-serif font
 
 .header {
-	position: relative;
-	height: 800px;
-	min-height: 500px;
-	width: 100%;
-	background: #161415
-		url("../../../public/images/portfolio/header-background.jpg") no-repeat top
-		center;
-	background-size: cover !important;
-	text-align: center;
-	overflow: hidden;
-	.social {
-		margin: 24px 0;
-		padding: 0;
-		font-size: 30px;
-		text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
-		li {
-			display: inline-block;
-			margin: 0 15px;
-			padding: 0;
-			a {
-				color: #fff;
-				&:hover {
-					color: #11abb0;
-				}
-			}
-		}
-	}
-	.scrolldown a {
-		position: absolute;
-		bottom: 30px;
-		left: 50%;
-		margin-left: -29px;
-		color: #fff;
-		display: block;
-		height: 42px;
-		width: 42px;
-		font-size: 42px;
-		line-height: 42px;
-		color: #fff;
-		border-radius: 100%;
-		transition: all 0.3s ease-in-out;
-		&:hover {
-			color: #b05911;
-		}
-	}
-}
+  background-color: $secondary-color;
+  padding: 20px 30px; 
+  font-family: $font-family;
 
-.banner {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 auto;
-	width: 85%;
-	padding-bottom: 30px;
-	text-align: center;
-	.banner-text {
-		width: 100%;
-	}
-}
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto; 
+  }
 
-.responsiveHeadline {
-	font: 90px/1.1em "opensans-bold", sans-serif;
-	color: white;
-	letter-spacing: -2px;
-	font-weight: bold;
-	margin: 0 auto 18px auto;
-	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
 
-	.description {
-		font: 18px/1.9em "librebaskerville-regular", serif;
-		color: #a8a8a8;
-		margin: 0 auto;
-		width: 70%;
-		text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-	}
+    li {
+      display: inline-block;
+      margin: 0 15px; 
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s ease; 
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      &.current {
+        a {
+          color: $primary-color; 
+          border-bottom: 2px solid $accent-color; 
+        }
+      }
+    }
+  }
+
+  .banner {
+    text-align: center;
+    margin-top: 30px; 
+
+    h1 {
+      color: $text-color;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      color: #7f8c8d; 
+      margin-bottom: 2rem;
+
+      span {
+        font-weight: bold;
+        color: $primary-color; 
+      }
+    }
+
+    .social {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 0 10px; 
+
+        a {
+          color: $text-color;
+          transition: color 0.2s ease; 
+
+          &:hover {
+            color: $accent-color; 
+          }
+
+          .icon {
+            font-size: 1.8rem; 
+          }
+        }
+      }
+    }
+  }
 }

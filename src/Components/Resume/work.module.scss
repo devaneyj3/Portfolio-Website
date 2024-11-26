@@ -1,116 +1,156 @@
-$resume-link-color: #11abb0;
-$resume-link-hover-color: #313131;
-$resume-background-color: #fff;
-$resume-header-font: "opensans-bold", sans-serif;
-$resume-info-font: "librebaskerville-italic", serif;
-$resume-regular-font: "opensans-regular", sans-serif;
+// Variables
+$primary-color: #2980b9; // A vibrant blue
+$secondary-color: #ecf0f1; // Light gray
+$accent-color: #e74c3c; // A bold red for accents
+$text-color: #333; 
+$font-family: 'Roboto', sans-serif; // A modern sans-serif font
+
+// Mixins
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+}
 
 .resume {
-	background: $resume-background-color;
-	padding: 20px;
-	overflow: hidden;
+  background-color: $secondary-color;
+  padding: 30px;
+  font-family: $font-family;
+  color: $text-color;
 
-	a,
-	a:visited {
-		color: $resume-link-color;
-	}
+  a,
+  a:visited {
+    color: $primary-color;
+    text-decoration: none; 
+    transition: color 0.2s ease; // Smooth transition for hover effect
 
-	a:hover,
-	a:focus {
-		color: $resume-link-hover-color;
-	}
+    &:hover {
+      color: $accent-color;
+    }
+  }
 
-	h1 {
-		font: 18px/24px $resume-header-font;
-		text-transform: uppercase;
-		letter-spacing: 1px;
+  h2 {
+    color: $primary-color;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative; // For the line element
 
-		span {
-			border-bottom: 3px solid $resume-link-color;
-			padding-bottom: 6px;
-		}
-	}
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: $accent-color;
+    }
+  }
 
-	h3 {
-		font: 25px/30px $resume-header-font;
-	}
+  h3 {
+    color: $text-color;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
 
-	.header-col {
-		padding-top: 9px;
-	}
+  .section {
+    margin-bottom: 3rem;
 
-	.main-col {
-		padding-right: 10%;
-	}
+    .content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  }
 
-	.education,
-	.work {
-		margin-bottom: 48px;
-		padding-bottom: 24px;
-		border-bottom: 1px solid #e8e8e8;
-	}
+  .educationItem,
+  .job {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
 
-	.workList {
-		list-style: square;
-	}
+    &:last-child {
+      border-bottom: none; 
+    }
+  }
 
-	.info {
-		font: 16px/24px $resume-info-font;
-		color: #6e7881;
-		margin-bottom: 18px;
-		margin-top: 9px;
+  .info {
+    font-size: 1rem;
+    color: #7f8c8d; // Slightly lighter text color
+    margin-bottom: 1rem;
 
-		span {
-			margin-right: 5px;
-			margin-left: 5px;
-		}
-	}
+    span {
+      margin: 0 0.5rem;
 
-	.date {
-		font: 15px/24px $resume-regular-font;
-		margin-top: 6px;
-	}
+      &::before { // Add a visually appealing bullet point
+        content: "\2022"; 
+        color: $accent-color;
+        margin-right: 5px;
+      }
+    }
+  }
 
-	.bars {
-		width: 95%;
-		float: left;
-		padding: 0;
-		text-align: left;
+  .date {
+    font-size: 0.9rem;
+  }
 
-		.skills {
-			margin-top: 36px;
-			list-style: none;
-		}
+  .skillsList {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Responsive columns
+    gap: 1rem; 
 
-		li {
-			position: relative;
-			margin-bottom: 60px;
-			background: #ccc;
-			height: 42px;
-			border-radius: 3px;
+    .skill {
+      .skillBar {
+        background-color: #ecf0f1;
+        border-radius: 20px; 
+        overflow: hidden;
 
-			em {
-				font: 15px $resume-header-font;
-				color: #313131;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-				font-weight: normal;
-				position: relative;
-				top: -36px;
-			}
+        .skillFill {
+          height: 10px; 
+          background-color: $primary-color;
+          border-radius: 20px;
+          transition: width 0.3s ease;
+        }
 
-			.bar-expand {
-				position: absolute;
-				left: 0;
-				top: 0;
-				margin: 0;
-				padding-right: 24px;
-				background: #313131;
-				display: inline-block;
-				height: 42px;
-				line-height: 42px;
-				border-radius: 3px 0 0 3px;
-			}
-		}
-	}
+        .skillName {
+          padding: 10px;
+          text-align: center;
+          font-weight: bold;
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  // Responsive adjustments
+  @include responsive(tablet) {
+    padding: 20px; 
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include responsive(mobile) {
+    padding: 15px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
 }

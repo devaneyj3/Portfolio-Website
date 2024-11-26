@@ -127,6 +127,10 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	font-family: "opensans-regular", sans-serif;
 	font-weight: normal;

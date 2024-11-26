@@ -73,24 +73,21 @@ const Header = ({ data }) => {
 			</nav>
 
 			<div className={styles.banner}>
-				<div className={styles.bannerText}>
-					<h1 className={styles.responsiveHeadline}>I'm {name}.</h1>
+				<div>
+					<h1 className={styles.responsiveHeadline}>I'm {name}</h1>
+				</div>
+				<div>
 					<p className={styles.description}>
-						I'm a {state} based <span>{occupation}</span>. {description}.
+						I'm a {state} based <span>{occupation}</span> {description}.
+						Learning new technologies and contributing to a team is a giant
+						driving force in my career endeavors. My biggest core value is
+						growing as a developer.
 					</p>
-					<hr />
+				</div>
+				<div>
 					<ul className={styles.social}>{networks}</ul>
 				</div>
 			</div>
-
-			<p className={styles.scrolldown}>
-				<a
-					className={styles.smoothscroll}
-					href="#about"
-					aria-label="Scroll down to About section">
-					<i className="icon-down-circle" aria-hidden="true"></i>
-				</a>
-			</p>
 		</header>
 	);
 };

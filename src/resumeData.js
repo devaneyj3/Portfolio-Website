@@ -45,7 +45,7 @@ export const data = {
 		],
 		work: [
 			{
-				company: "AG Usa",
+				company: "AG-USA",
 				title: "Web Developer",
 				years: "May 2024 - Present",
 				description: [

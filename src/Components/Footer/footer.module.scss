@@ -1,79 +1,67 @@
+// Variables
+$primary-color: #2980b9; // Vibrant blue
+$secondary-color: #ecf0f1; // Light gray
+$accent-color: #e74c3c; // Bold red for accents
+$text-color: #333;
+$font-family: 'Roboto', sans-serif; // Modern sans-serif font
+
 .footer {
-	padding-top: 48px;
-	margin-bottom: 48px;
-	color: #303030;
-	font-size: 14px;
-	text-align: center;
-	position: relative;
-}
+  background-color: #333; // Dark background for the footer
+  color: #fff; // Light text color
+  padding: 30px;
+  font-family: $font-family;
 
-.footerLink {
-	color: #525252;
+  .row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 960px;
+    margin: 0 auto; 
+  }
 
-	&:hover,
-	&:focus {
-		color: #fff;
-	}
-}
+  .socialLinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-.copyRight {
-	margin: 0;
-	padding: 0;
+    .socialLinkItem {
+      display: inline-block;
+      margin-right: 20px; 
 
-	li {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		line-height: 24px;
+      a {
+        color: #fff; 
+        font-size: 1.5rem; 
+        transition: color 0.2s ease;
 
-		&:before {
-			content: "\2022";
-			padding-left: 10px;
-			padding-right: 10px;
-			color: #095153;
-		}
-	}
-}
+        &:hover {
+          color: $primary-color; 
+        }
+      }
+    }
+  }
 
-.socialLinks {
-	margin: 18px 0 30px 0;
-	padding: 0;
-	font-size: 30px;
+  .copyRight {
+    list-style: none;
+    margin: 10px 0 0 0; 
+    padding: 0;
+    font-size: 0.9rem; 
 
-	li {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		margin-left: 42px;
-		color: #f06000;
+    li {
+      display: inline-block;
+      margin-right: 20px; 
 
-		&:first-child {
-			margin-left: 0;
-		}
-	}
-}
+      &:last-child {
+        margin-right: 0; 
+      }
 
-.goTop {
-	position: absolute;
-	top: -24px;
-	left: 50%;
-	margin-left: -30px;
+      a {
+        color: #fff;
+        transition: color 0.2s ease;
 
-	a {
-		text-decoration: none;
-		border: 0;
-		display: block;
-		width: 60px;
-		height: 60px;
-		background-color: #525252;
-		transition: all 0.2s ease-in-out;
-		color: #fff;
-		font-size: 21px;
-		line-height: 60px;
-		border-radius: 100%;
-
-		&:hover {
-			background-color: #0f9095;
-		}
-	}
+        &:hover {
+          color: $accent-color; 
+        }
+      }
+    }
+  }
 }

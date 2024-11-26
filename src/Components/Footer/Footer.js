@@ -24,28 +24,8 @@ const Footer = ({ data }) => {
 					<ul className={styles.socialLinks}>{networksMap}</ul>
 
 					<ul className={styles.copyRight}>
-						<li>&copy; 2021 Jordan Devaney</li>
-						<li>
-							Design by{" "}
-							<a
-								className={styles.footerLink}
-								title="Styleshout"
-								href="http://www.styleshout.com/"
-								aria-label="Styleshout website">
-								Styleshout
-							</a>
-						</li>
+						<li>&copy; 2021-2024 Jordan Devaney</li>
 					</ul>
-				</div>
-				<div className={styles.goTop}>
-					<a
-						className={styles.smoothscroll}
-						title="Back to Top"
-						href="#home"
-						aria-label="Scroll back to top">
-						<i className="icon-up-open" aria-hidden="true"></i>
-						<span className="sr-only">Back to Top</span>
-					</a>
 				</div>
 			</div>
 		</footer>

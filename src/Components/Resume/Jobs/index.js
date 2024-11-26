@@ -4,7 +4,6 @@ import styles from "../work.module.scss";
 const Jobs = ({ jobs }) => {
 	return (
 		<section aria-labelledby="jobsHeading">
-			<h2 id="jobsHeading">Jobs</h2>
 			{jobs.map((job) => (
 				<article key={job.company} className={styles.job}>
 					<h3>{job.company}</h3>
@@ -17,9 +16,7 @@ const Jobs = ({ jobs }) => {
 					</p>
 					<ul>
 						{job.description.map((item, index) => (
-							<li className={styles.workList} key={index}>
-								{item}
-							</li>
+							<li key={index}>{item}</li>
 						))}
 					</ul>
 				</article>
