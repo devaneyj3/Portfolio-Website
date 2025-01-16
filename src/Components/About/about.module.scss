@@ -3,37 +3,44 @@ $primary-color: #2980b9; // Vibrant blue
 $secondary-color: #ecf0f1; // Light gray
 $accent-color: #e74c3c; // Bold red for accents
 $text-color: #333;
+
+
 $font-family: 'Roboto', sans-serif; // Modern sans-serif font
 
 
 .about {
   background-color: $secondary-color;
+
   padding: 30px;
   font-family: $font-family;
   color: $text-color;
   display: flex; // Use flexbox for layout
   align-items: center; // Vertically align items
+  flex-wrap: wrap;
+
 
   .profileWrapper {
-    margin-right: 30px; // Space between image and content
+    margin-right: 30px;
 
     .profilePic {
-      width: 200px; 
-      border-radius: 50%; 
+
+      width:200px; 
+      border-radius: 40%; 
       object-fit: cover; 
       border: 5px solid $primary-color; // Add a border to the image
     }
   }
 
   .content {
+    max-width: 600px;
     h2 {
       color: $primary-color;
-      font-size: 2rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1.75rem;
       line-height: 1.6; 
       color: #7f8c8d; 
     }
@@ -50,7 +57,6 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
         }
       }
     }
-
     .download {
       margin-top: 2rem;
 
@@ -60,7 +66,7 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
         padding: 12px 20px;
         border: none;
         border-radius: 5px;
-        font-size: 1.1rem;
+        font-size: 1.71rem;
         cursor: pointer;
         text-decoration: none; 
         display: inline-flex; // Use inline-flex to align icon and text
@@ -74,6 +80,19 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
         i {
           margin-right: 8px; 
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 904px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    .profileWrapper {
+      .profilePic {
+        border-radius: 0%;
+
       }
     }
   }

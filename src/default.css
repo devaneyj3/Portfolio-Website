@@ -134,7 +134,10 @@ a {
 body {
 	font-family: "opensans-regular", sans-serif;
 	font-weight: normal;
-	font-size: 15px;
 	line-height: 30px;
 	color: #838c95;
+}
+
+li {
+	list-style: none;
 }

@@ -25,10 +25,10 @@ const About = ({ data }) => {
 					<address>
 						<p className={styles.address}>
 							<span>{name}</span>
-							<br />
 							<span>{phone}</span>
-							<br />
-							<span>{email}</span>
+							<a href="mailto:jordandevaney28@gmail.com">
+								jordandevaney28@gmail.com
+							</a>
 						</p>
 					</address>
 				</section>

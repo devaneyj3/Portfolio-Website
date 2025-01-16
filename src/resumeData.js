@@ -16,12 +16,12 @@ export const data = {
 	},
 	social: [
 		{
-			name: "linkedin",
+			name: "Linkedin",
 			url: "https://www.linkedin.com/in/jordandevaney/",
 			className: "fa fa-linkedin",
 		},
 		{
-			name: "github",
+			name: "Github",
 			url: "https://github.com/devaneyj3",
 			className: "fa fa-github",
 		},
@@ -53,7 +53,7 @@ export const data = {
 					"Automate tonnage reports with Python and Pandas",
 					"Handle integrations of multiple API's with Shopify",
 					"Utilize Trello for Project Management and task ideas",
-					"Help brainstrom ideas to streamline effeciency",
+					"Transitioned a website to a Headless CMS solution through Shopify where it generated $5,900 in sales in the first month",
 				],
 			},
 			{

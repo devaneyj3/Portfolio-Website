@@ -8,6 +8,7 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
 .header {
   background-color: $secondary-color;
   padding: 20px 30px; 
+  font-size: 20px;
   font-family: $font-family;
 
   .wrap {
@@ -46,9 +47,11 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
   }
 
   .banner {
+    justify-self: center;
     text-align: center;
-    margin-top: 30px; 
-
+    margin-top: 30px;
+    font-size: 20px;
+    max-width: 1000px;
     h1 {
       color: $text-color;
       font-size: 3rem;
@@ -56,7 +59,7 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
     }
 
     .description {
-      font-size: 1.2rem;
+      font-size: 1.75rem;
       color: #7f8c8d; 
       margin-bottom: 2rem;
 
