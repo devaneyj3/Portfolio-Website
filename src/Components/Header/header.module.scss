@@ -58,6 +58,10 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
       margin-bottom: 1rem;
     }
 
+    p {
+    font-display: swap;
+    }
+
     .description {
       font-size: 1.75rem;
       color: #7f8c8d; 
