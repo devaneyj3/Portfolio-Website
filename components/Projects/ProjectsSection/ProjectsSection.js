@@ -17,6 +17,8 @@ const ProjectsSection = ({ title, projects, imagePath, sectionId }) => {
 							className={styles.image}
 							src={projectImage}
 							alt={`Screenshot of ${project.title}, a ${project.category} project`}
+							width={100}
+							height={200}
 						/>
 						<figcaption className={styles.overlay}>
 							<div className={styles.meta}>

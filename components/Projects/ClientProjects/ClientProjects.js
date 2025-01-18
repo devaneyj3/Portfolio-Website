@@ -8,7 +8,7 @@ const ClientProjects = ({ data }) => {
 		<ProjectsSection
 			title="Check Out Some of My Client Projects"
 			projects={client_projects}
-			imagePath="images/portfolio"
+			imagePath="/images/portfolio"
 			sectionId="portfolioHeading"
 		/>
 	);

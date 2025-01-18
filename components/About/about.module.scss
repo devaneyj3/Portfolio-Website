@@ -23,8 +23,6 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
     margin-right: 30px;
 
     .profilePic {
-
-      width:200px; 
       border-radius: 40%; 
       object-fit: cover; 
       border: 5px solid $primary-color; // Add a border to the image
@@ -74,7 +72,7 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
         transition: background-color 0.3s ease; 
 
         &:hover {
-          background-color: darken($primary-color, 10%); 
+          background-color: $primary-color; 
         }
 
         i {

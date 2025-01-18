@@ -5,15 +5,18 @@ import Link from "next/link";
 
 const About = ({ data }) => {
 	const { name, bio, phone, email, image } = data;
-	const profilePic = `images/${image}`;
+	const profilePic = `/images/${image}`;
 
 	return (
 		<section className={styles.about} aria-labelledby="aboutMe">
 			<figure className={styles.profileWrapper}>
 				<Image
 					className={styles.profilePic}
+					href={profilePic}
 					src={profilePic}
 					alt={`Profile picture of ${name}`}
+					width={100}
+					height={200}
 				/>
 			</figure>
 			<div className={styles.content}>
@@ -34,10 +37,10 @@ const About = ({ data }) => {
 					</address>
 				</section>
 				<div className={styles.download}>
-					<Link className={styles.button} aria-label="Download Resume">
+					{/* <Link className={styles.button} aria-label="Download Resume">
 						<i className="fa fa-download" aria-hidden="true"></i>
 						Download Resume
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 		</section>
