@@ -1,5 +1,4 @@
 import React from "react";
-import resume from "../resume.pdf";
 import styles from "./about.module.scss"; // Ensure the path is correct based on your project structure
 
 const About = ({ data }) => {
@@ -33,11 +32,7 @@ const About = ({ data }) => {
 					</address>
 				</section>
 				<div className={styles.download}>
-					<a
-						href={resume}
-						className={styles.button}
-						download="resume.pdf"
-						aria-label="Download Resume">
+					<a className={styles.button} aria-label="Download Resume">
 						<i className="fa fa-download" aria-hidden="true"></i>
 						Download Resume
 					</a>
