@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footer.module.scss"; // Ensure the path is correct
+import Link from "next/link";
 
 const Footer = ({ data }) => {
 	const { social } = data;
@@ -7,13 +8,13 @@ const Footer = ({ data }) => {
 	// Map social networks to list items
 	const networksMap = social.map((network) => (
 		<li key={network.name} className={styles.socialLinkItem}>
-			<a
+			<Link
 				href={network.url}
 				aria-label={`Follow us on ${network.name}`}
 				title={`Follow us on ${network.name}`}>
 				<i className={network.className} aria-hidden="true"></i>
 				<span className="sr-only">{network.name}</span>
-			</a>
+			</Link>
 		</li>
 	));
 
@@ -24,7 +25,7 @@ const Footer = ({ data }) => {
 					<ul className={styles.socialLinks}>{networksMap}</ul>
 
 					<ul className={styles.copyRight}>
-						<li>&copy; 2021-2024 Jordan Devaney</li>
+						<li>&copy; 2021-2025 Jordan Devaney</li>
 					</ul>
 				</div>
 			</div>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./header.module.scss"; // Adjust the path as necessary
+import Link from "next/link";
 
 const Header = ({ data }) => {
 	const {
@@ -13,7 +14,7 @@ const Header = ({ data }) => {
 	// Map social networks to list items with accessibility enhancements
 	const networks = social.map((network) => (
 		<li key={network.name} className={styles.socialLink}>
-			<a
+			<Link
 				href={network.url}
 				aria-label={`Follow me on ${network.name}`}
 				title={`Follow me on ${network.name}`}>
@@ -21,7 +22,7 @@ const Header = ({ data }) => {
 					className={`${network.className} ${styles.icon}`}
 					aria-hidden="true"></i>
 				<span className="sr-only">{network.name}</span>
-			</a>
+			</Link>
 		</li>
 	));
 
@@ -30,44 +31,44 @@ const Header = ({ data }) => {
 			<nav className={styles.wrap}>
 				<ul className={styles.nav}>
 					<li className={styles.current}>
-						<a
+						<Link
 							className={styles.smoothscroll}
 							href="#home"
 							aria-label="Go to Home section">
 							Home
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
+						<Link
 							className={styles.smoothscroll}
 							href="#about"
 							aria-label="Go to About section">
 							About
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
+						<Link
 							className={styles.smoothscroll}
 							href="#resume"
 							aria-label="Go to Resume section">
 							Resume
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
+						<Link
 							className={styles.smoothscroll}
 							href="#portfolio"
 							aria-label="Go to Works section">
 							Works
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
+						<Link
 							className={styles.smoothscroll}
 							href="#contact"
 							aria-label="Go to Contact section">
 							Contact
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>

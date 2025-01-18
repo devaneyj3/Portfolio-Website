@@ -1,17 +1,19 @@
 import React from "react";
 import styles from "../projects.module.scss"; // Ensure this path matches the location of your SCSS file
+import Link from "next/link";
+import Image from "next/image";
 
 const ProjectsSection = ({ title, projects, imagePath, sectionId }) => {
 	const projectsMap = projects.map((project) => {
 		const projectImage = `${imagePath}/${project.image}`;
 		return (
 			<article key={project.title} className={styles.portfolio__item}>
-				<a
+				<Link
 					href={project.url}
 					title={`View project: ${project.title}`}
 					aria-label={`View project: ${project.title}`}>
 					<figure className={styles.item__wrap}>
-						<img
+						<Image
 							className={styles.image}
 							src={projectImage}
 							alt={`Screenshot of ${project.title}, a ${project.category} project`}
@@ -23,7 +25,7 @@ const ProjectsSection = ({ title, projects, imagePath, sectionId }) => {
 							</div>
 						</figcaption>
 					</figure>
-				</a>
+				</Link>
 			</article>
 		);
 	});
