@@ -138,26 +138,13 @@ export const data = {
 				image: "simon-game.png",
 				url: "https://devaneyj3.github.io/simon_game/",
 			},
-			{
-				title: "Image Upload",
-				category:
-					"Used React and the React Uploading library to make my own image uploader.",
-				image: "image_upload.png",
-				url: "https://main.d39nx6sonuwpa1.amplifyapp.com/",
-			},
+
 			{
 				title: "Quote Maker",
 				category:
 					"Used React, React Router, SCSS, Reactstrap, and UUID to make a quote generator where users can enter in quotes.",
 				image: "quote_maker.png",
 				url: "https://main.d1w5rtjhri4um8.amplifyapp.com/quotes",
-			},
-			{
-				title: "To Do List",
-				category:
-					"Utilized Redux with React to make a todo app. Used AWS Amplify to deploy and the AWS Graphql API service.",
-				image: "todo.jpg",
-				url: "https://main.d1k25onjnr2iyp.amplifyapp.com/",
 			},
 			{
 				title: "Game of Life",
