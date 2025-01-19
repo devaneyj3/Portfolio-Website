@@ -3,13 +3,13 @@ import styles from "./contact.module.scss"; // Ensure this path matches the loca
 import emailjs from "@emailjs/browser";
 
 const {
-	REACT_APP_EMAILJS_PUBLICKEY,
-	REACT_APP_EMAILJS_SERVICEID,
-	REACT_APP_EMAILJS_TEMPLATE,
+	NEXT_PUBLIC_EMAILJS_PUBLICKEY,
+	NEXT_PUBLIC_EMAILJS_SERVICEID,
+	NEXT_PUBLIC_EMAILJS_TEMPLATE,
 } = process.env;
 
 const Contact = ({ data }) => {
-	useEffect(() => emailjs.init(REACT_APP_EMAILJS_PUBLICKEY), []);
+	useEffect(() => emailjs.init(NEXT_PUBLIC_EMAILJS_PUBLICKEY), []);
 	const { message } = data;
 
 	// State to manage form inputs
@@ -67,8 +67,8 @@ const Contact = ({ data }) => {
 			// Use a service like EmailJS or an API endpoint to send the email
 			emailjs
 				.send(
-					REACT_APP_EMAILJS_SERVICEID, // Replace with your EmailJS service ID
-					REACT_APP_EMAILJS_TEMPLATE, // Replace with your EmailJS template ID
+					NEXT_PUBLIC_EMAILJS_SERVICEID, // Replace with your EmailJS service ID
+					NEXT_PUBLIC_EMAILJS_TEMPLATE, // Replace with your EmailJS template ID
 					formData
 				)
 				.then((response) => {

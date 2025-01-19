@@ -15,8 +15,8 @@ const About = ({ data }) => {
 					href={profilePic}
 					src={profilePic}
 					alt={`Profile picture of ${name}`}
-					width={100}
-					height={200}
+					width={200}
+					height={400}
 				/>
 			</figure>
 			<div className={styles.content}>
