@@ -36,7 +36,9 @@ const ProjectsSection = ({ title, projects, imagePath, sectionId }) => {
 		<section className={styles.portfolio} aria-labelledby={sectionId}>
 			<div className="row">
 				<div className="twelve columns collapsed">
-					<h2 id={sectionId}>{title}</h2>
+					<h2 className="heading" id={sectionId}>
+						{title}
+					</h2>
 					<div className={`${styles.portfolio__wrapper} cf`}>{projectsMap}</div>
 				</div>
 			</div>
