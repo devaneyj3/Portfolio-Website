@@ -133,7 +133,7 @@ body {
 	font-family: "opensans-regular", sans-serif;
 	font-weight: normal;
 	line-height: 30px;
-	background-color: #ecf0f1;
+	background-color: #ecf0f1 !important;
 }
 
 li {

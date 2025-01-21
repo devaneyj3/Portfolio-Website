@@ -70,6 +70,14 @@ const Header = ({ data }) => {
 							Contact
 						</Link>
 					</li>
+					<li>
+						<Link
+							className={styles.smoothscroll}
+							href="https://devtuneup.com"
+							aria-label="Go to my Blog">
+							Blog
+						</Link>
+					</li>
 				</ul>
 			</nav>
 
