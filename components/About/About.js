@@ -27,6 +27,7 @@ const About = ({ data }) => {
 					<Link
 						className={styles.smoothscroll}
 						href="https://devtuneup.com"
+						target="_blank"
 						aria-label="Visit my blog to learn more about me and my work">
 						<Button color="success" size="lg">
 							Discover More About Me on My Blog!

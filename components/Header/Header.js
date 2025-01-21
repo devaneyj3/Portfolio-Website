@@ -74,6 +74,7 @@ const Header = ({ data }) => {
 						<Link
 							className={styles.smoothscroll}
 							href="https://devtuneup.com"
+							target="_blank"
 							aria-label="Go to my Blog">
 							Blog
 						</Link>
