@@ -7,7 +7,10 @@ const ProjectsSection = ({ title, projects, imagePath, sectionId }) => {
 	const projectsMap = projects.map((project) => {
 		const projectImage = `${imagePath}/${project.image}`;
 		return (
-			<article key={project.title} className={styles.portfolio__item}>
+			<article
+				id="portfolio"
+				key={project.title}
+				className={styles.portfolio__item}>
 				<Link
 					href={project.url}
 					title={`View project: ${project.title}`}

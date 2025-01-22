@@ -1,16 +1,24 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import styles from "./contact.module.scss"; // Ensure this path matches the location of your SCSS module file
 import emailjs from "@emailjs/browser";
 
-const {
-	NEXT_PUBLIC_EMAILJS_PUBLICKEY,
-	NEXT_PUBLIC_EMAILJS_SERVICEID,
-	NEXT_PUBLIC_EMAILJS_TEMPLATE,
-} = process.env;
-
 const Contact = ({ data }) => {
-	useEffect(() => emailjs.init(NEXT_PUBLIC_EMAILJS_PUBLICKEY), []);
 	const { message } = data;
+
+	useEffect(() => {
+		const publicKey = process.env.NEXT_PUBLIC_MAILJS_KEY;
+
+		if (publicKey) {
+			emailjs.init(publicKey);
+		} else {
+			console.error(
+				"Public key not found. Check your environment variables.",
+				process.env
+			);
+		}
+	}, []);
 
 	// State to manage form inputs
 	const [formData, setFormData] = useState({
@@ -64,27 +72,26 @@ const Contact = ({ data }) => {
 		// If no errors, clear errors and submit form data
 		setErrors({});
 		try {
-			// Use a service like EmailJS or an API endpoint to send the email
 			emailjs
 				.send(
-					NEXT_PUBLIC_EMAILJS_SERVICEID, // Replace with your EmailJS service ID
-					NEXT_PUBLIC_EMAILJS_TEMPLATE, // Replace with your EmailJS template ID
+					process.env.NEXT_PUBLIC_MAILJS_SERVICEID,
+					process.env.NEXT_PUBLIC_MAILJS_TEMPLATE,
 					formData
 				)
 				.then((response) => {
 					console.log("SUCCESS!", response.status, response.text);
-					setFormData({ name: "", email: "", message: "" });
+					setFormData({
+						contactName: "",
+						contactEmail: "",
+						contactSubject: "",
+						contactMessage: "",
+					});
+					setSuccessMessage("Your message was sent successfully!");
 				})
 				.catch((err) => {
 					console.error("FAILED...", err);
+					setSuccessMessage("Failed to send message. Please try again later.");
 				});
-			setSuccessMessage("Your message was sent successfully!");
-			setFormData({
-				contactName: "",
-				contactEmail: "",
-				contactSubject: "",
-				contactMessage: "",
-			});
 		} catch (error) {
 			console.error("Failed to send email:", error);
 			setSuccessMessage("Failed to send message. Please try again later.");
@@ -92,14 +99,21 @@ const Contact = ({ data }) => {
 	};
 
 	return (
-		<section className={styles.contact} aria-labelledby="contactFormHeading">
-			<h2 id="contactFormHeading">Get In Touch</h2>
-			<p className={styles.lead}>{message}</p>
+		<section
+			className={styles.contact}
+			aria-labelledby="contactFormHeading"
+			id="contact">
+			<h2 id="contactFormHeading">Looking for a Skilled Web Developer?</h2>
+			<div
+				className={styles.lead}
+				dangerouslySetInnerHTML={{ __html: data.message }}
+			/>
 
 			<form
 				method="post"
 				className={styles.contactForm}
 				name="contactForm"
+				id="contactForm"
 				aria-labelledby="contactFormHeading"
 				onSubmit={handleSubmit}>
 				<fieldset>
@@ -176,9 +190,6 @@ const Contact = ({ data }) => {
 							aria-label="Submit Contact Form">
 							Submit
 						</button>
-						<span className={styles.imageLoader}>
-							<img src="images/loader.gif" alt="Loading" />
-						</span>
 					</div>
 				</fieldset>
 			</form>

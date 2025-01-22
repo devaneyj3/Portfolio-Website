@@ -4,8 +4,21 @@ export const data = {
 	description:
 		"I have a strong desire to be a productive member of a team environment that fosters learning, growth, and develop a great product for the user",
 	image: "Me.jpg",
-	bio: "I am a Full Stack Web Developer passionate about solving complex problems and making great websites that will benefit the client. I am determined to serve you with my skills and meet your need.",
-	message: "Can I help you on your next project? Let's chat.",
+	message: `
+    <p>
+      Let's work together to bring your vision to life! Whether you need a <em>custom website</em>, <em>modern web applications</em>, or <em>performance optimization</em>, I can help. 
+      <a href="#contactForm" aria-label="Contact me for web development services">Contact me today</a> to start your next project and take your <strong>online presence</strong> to the next level!
+    </p>
+  `,
+	bio: `
+		<p>I am a <strong>Full Stack Web Developer</strong> passionate about solving <strong>complex coding challenges</strong> and creating <strong>high-performing, visually appealing websites</strong> that drive results and benefit clients.</p>
+		<p>With a strong focus on <strong>responsive design, user experience (UX), and seamless functionality</strong>, I am committed to delivering web solutions that align with your business goals.</p>
+		<p>My expertise spans both front-end and back-end development, ensuring your website is not only beautiful but also efficient and secure.</p>
+		<p>I am determined to bring your vision to life by leveraging modern technologies and best practices in <strong>web development</strong>.</p>
+		<p>Whether you need to build a custom website, optimize performance, or enhance functionality, I am here to serve you with precision and creativity.</p>
+		<p>Let’s work together to develop a web solution that meets your needs and exceeds expectations.</p>
+		<p><strong>Contact me today</strong> to start creating a website that will elevate your online presence!</p>
+	`,
 	email: "jordandevaney28@gmail.com",
 	phone: "810-772-0086",
 	address: {
@@ -28,7 +41,7 @@ export const data = {
 	],
 	resume: {
 		skillmessage:
-			"I have developed superb in demand programming skills through BloomTech (AKA Lambda School), Western Govenors University, as well as from various Udemy and other Massive Open Online Courses (MOOCs)",
+			"I have developed superb in-demand programming skills through BloomTech (AKA Lambda School), Western Governors University, as well as from various Udemy and other Massive Open Online Courses (MOOCs)",
 		education: [
 			{
 				school: "BloomTech (AKA Lamdba School)",
@@ -38,7 +51,7 @@ export const data = {
 					"Worked on cross functional teams and building products with React, Redux, Context, Node, Python, and SQL",
 			},
 			{
-				school: "Western Governer's University",
+				school: "Western Governors University",
 				degree: "Bachelor of Science: Software Engineering",
 				graduated: "July 2023",
 			},
@@ -47,7 +60,7 @@ export const data = {
 			{
 				company: "AG-USA",
 				title: "Web Developer",
-				years: "May 2024 - Present",
+				years: "May 2021 - Present",
 				description: [
 					"Utilize a custom app with NextJS with the Shopify API",
 					"Automate tonnage reports with Python and Pandas",

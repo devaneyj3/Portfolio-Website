@@ -32,7 +32,7 @@ const Resume = ({ data }) => {
 	));
 
 	return (
-		<section className={styles.resume} aria-label="Resume">
+		<section id="resume" className={styles.resume} aria-label="Resume">
 			<div className={styles.section}>
 				<h2 className={styles.sectionTitle} id="education">
 					Education

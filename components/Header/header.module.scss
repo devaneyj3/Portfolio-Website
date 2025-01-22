@@ -47,13 +47,13 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
   }
 
   .banner {
-    justify-self: center;
-    text-align: center;
+
     margin-top: 70px;
     font-size: 20px;
-    max-width: 1000px;
+
     h1 {
-      color: $text-color;
+      text-align: center;
+      color: $primary-color;     
       font-size: 3rem;
       margin-bottom: 1rem;
     }
@@ -70,6 +70,7 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
     }
 
     .social {
+      text-align: center;
       list-style: none;
       margin: 0;
       padding: 0;

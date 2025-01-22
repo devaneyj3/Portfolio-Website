@@ -7,9 +7,10 @@ import { Button } from "reactstrap";
 const About = ({ data }) => {
 	const { name, bio, phone, email, image } = data;
 	const profilePic = `/images/${image}`;
+	const resume = "/resume.pdf";
 
 	return (
-		<section className={styles.about} aria-labelledby="aboutMe">
+		<section id="about" className={styles.about} aria-labelledby="aboutMe">
 			<figure className={styles.profileWrapper}>
 				<Image
 					className={styles.profilePic}
@@ -23,13 +24,13 @@ const About = ({ data }) => {
 			<div className={styles.content}>
 				<div className={styles.aboutMe}>
 					<h2 id="aboutMe">About Me</h2>
-					<p>{bio}</p>
+					<div dangerouslySetInnerHTML={{ __html: bio }} />
 					<Link
 						className={styles.smoothscroll}
 						href="https://devtuneup.com"
 						target="_blank"
 						aria-label="Visit my blog to learn more about me and my work">
-						<Button color="success" size="lg">
+						<Button className={styles.resume_btn} color="success" size="lg">
 							Discover More About Me on My Blog!
 						</Button>
 					</Link>
@@ -47,10 +48,14 @@ const About = ({ data }) => {
 					</address>
 				</section>
 				<div className={styles.download}>
-					{/* <Link className={styles.button} aria-label="Download Resume">
+					<Link
+						href={resume}
+						className={styles.button}
+						aria-label="Download Resume"
+						target="_blank">
 						<i className="fa fa-download" aria-hidden="true"></i>
 						Download Resume
-					</Link> */}
+					</Link>
 				</div>
 			</div>
 		</section>
