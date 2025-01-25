@@ -151,14 +151,6 @@ export const data = {
 				image: "simon-game.png",
 				url: "https://devaneyj3.github.io/simon_game/",
 			},
-
-			{
-				title: "Quote Maker",
-				category:
-					"Used React, React Router, SCSS, Reactstrap, and UUID to make a quote generator where users can enter in quotes.",
-				image: "quote_maker.png",
-				url: "https://main.d1w5rtjhri4um8.amplifyapp.com/quotes",
-			},
 			{
 				title: "Game of Life",
 				category:
@@ -169,7 +161,7 @@ export const data = {
 			{
 				title: "Budget App",
 				category: "A Next.js App",
-				image: "next_budget.png",
+				image: "budget.jpg",
 				url: "https://next-budget-eta.vercel.app/",
 			},
 			{
@@ -178,13 +170,6 @@ export const data = {
 					"Utilized React, Context API, GitHub API and Fusion Charts to display stats of searched user account.",
 				image: "github.png",
 				url: "https://search-github-users54.netlify.app/",
-			},
-			{
-				title: "Comfy Sloth",
-				category:
-					"Utilized React, Auth0, Context API with Use Reducer, and Stripe API to make an e-commerce store",
-				image: "comfy.png",
-				url: "https://testing-comfy-jd.netlify.app/",
 			},
 		],
 		client_projects: [
