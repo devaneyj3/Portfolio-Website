@@ -168,9 +168,9 @@ export const data = {
 			},
 			{
 				title: "Budget App",
-				category: "Utilized React and Redux to make a buget and checkbook.",
-				image: "budget.png",
-				url: "https://dazzling-kirch-79dfd6.netlify.app/",
+				category: "A Next.js App",
+				image: "next_budget.png",
+				url: "https://next-budget-eta.vercel.app/",
 			},
 			{
 				title: "Github Users",
