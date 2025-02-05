@@ -10,6 +10,10 @@ export default function RootLayout({ children }) {
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta
+					name="google-site-verification"
+					content="r0MxxBLMvLdnUJi9uGtmUeIaOLIrLYdndQmv3BpimCI"
+				/>
+				<meta
 					name="description"
 					content="Professional web developer based in Michigan specializing in React and e-commerce solutions."
 				/>
