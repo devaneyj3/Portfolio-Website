@@ -10,6 +10,7 @@ import Resume from "../components/Resume/Resume";
 import Contact from "../components/Contact/Contact";
 import PersonalProjects from "../components/Projects/PersonalProjects/PersonalProjects";
 import ClientProjects from "../components/Projects/ClientProjects/ClientProjects";
+import ServicesSection from "@/components/Services/ServicesSection";
 
 const App = () => {
 	const [resumeData] = useState(data);
@@ -17,6 +18,7 @@ const App = () => {
 		<main>
 			<Header data={resumeData} role="banner" />
 			<About data={resumeData} role="region" />
+			<ServicesSection data={resumeData} role="region" />
 			<PersonalProjects data={resumeData} role="region" />
 			<ClientProjects data={resumeData} role="region" />
 			<Resume data={resumeData} role="region" />

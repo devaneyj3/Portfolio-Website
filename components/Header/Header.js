@@ -49,6 +49,14 @@ const Header = ({ data }) => {
 					<li>
 						<Link
 							className={styles.smoothscroll}
+							href="#services"
+							aria-label="Go to Services section">
+							Services
+						</Link>
+					</li>
+					<li>
+						<Link
+							className={styles.smoothscroll}
 							href="#resume"
 							aria-label="Go to Resume section">
 							Resume
@@ -68,15 +76,6 @@ const Header = ({ data }) => {
 							href="#contact"
 							aria-label="Go to Contact section">
 							Contact
-						</Link>
-					</li>
-					<li>
-						<Link
-							className={styles.smoothscroll}
-							href="https://devtuneup.com"
-							target="_blank"
-							aria-label="Go to my Blog">
-							Blog
 						</Link>
 					</li>
 				</ul>

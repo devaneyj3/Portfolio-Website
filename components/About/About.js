@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./about.module.scss"; // Ensure the path is correct based on your project structure
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "reactstrap";
 
 const About = ({ data }) => {
 	const { name, bio, phone, email, image } = data;
@@ -18,22 +17,13 @@ const About = ({ data }) => {
 					src={profilePic}
 					alt={`Profile picture of ${name}`}
 					width={200}
-					height={400}
+					height={300}
 				/>
 			</figure>
 			<div className={styles.content}>
 				<div className={styles.aboutMe}>
 					<h2 id="aboutMe">About Me</h2>
 					<div dangerouslySetInnerHTML={{ __html: bio }} />
-					<Link
-						className={styles.smoothscroll}
-						href="https://devtuneup.com"
-						target="_blank"
-						aria-label="Visit my blog to learn more about me and my work">
-						<Button className={styles.resume_btn} color="success" size="lg">
-							Discover More About Me on My Blog!
-						</Button>
-					</Link>
 				</div>
 				<section className={styles.contactDetails}>
 					<h2 id="contactDetails">Contact Details</h2>

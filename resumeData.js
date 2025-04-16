@@ -3,7 +3,7 @@ export const data = {
 	occupation: "Full Stack Web Developer",
 	description:
 		"I have a strong desire to be a productive member of a team environment that fosters learning, growth, and develop a great product for the user",
-	image: "Me.jpg",
+	image: "Me.webp",
 	message: `
     <p>
       Let's work together to bring your vision to life! Whether you need a <em>custom website</em>, <em>modern web applications</em>, or <em>performance optimization</em>, I can help. 
