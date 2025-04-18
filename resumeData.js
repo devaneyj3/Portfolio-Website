@@ -174,10 +174,22 @@ export const data = {
 		],
 		client_projects: [
 			{
+				title: "AG-USA",
+				category: "Main website for AG-USA.",
+				image: "agusa.webp",
+				url: "https://agusa.life",
+			},
+			{
+				title: "EdenRich",
+				category: "Landing page for an AG-USA product to sell in stores.",
+				image: "edenrich.png",
+				url: "https://edenrich.life",
+			},
+			{
 				title: "Max Goodness",
 				category: "Sales website created for Max-Well a subsidary of AG-USA",
 				image: "maxgoodness.png",
-				url: "https://maxgoodness.com",
+				url: "https://max-well-yv93-devaneyj3s-projects.vercel.app/",
 			},
 			{
 				title: "Goshen Hill Rental",
