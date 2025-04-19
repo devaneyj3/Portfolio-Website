@@ -122,6 +122,7 @@ Typeplate Typographic Starter Kit - http://typeplate.com/
 html {
 	font-size: 62.5%;
 	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
 }
 
 a {
