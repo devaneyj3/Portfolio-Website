@@ -8,7 +8,7 @@ const ProjectsSection = ({ title, projects, imagePath, sectionId }) => {
 		const projectImage = `${imagePath}/${project.image}`;
 		return (
 			<article
-				id="portfolio"
+				id={project.title.replace(/\s+/g, "-").toLowerCase()}
 				key={project.title}
 				className={styles.portfolio__item}>
 				<Link

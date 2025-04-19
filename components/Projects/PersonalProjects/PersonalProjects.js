@@ -7,6 +7,7 @@ const PersonalProjects = ({ data }) => {
 	return (
 		<ProjectsSection
 			title="Check Out Some of My Personal Projects"
+			id="portfolio"
 			projects={personal_projects}
 			imagePath="/images/portfolio"
 			sectionId="personalProjectsHeading"

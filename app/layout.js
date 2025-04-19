@@ -1,22 +1,68 @@
 import "./globals.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+// app/layout.tsx
+
+export const viewport = {
+	themeColor: "#0f172a",
+	colorScheme: "light",
+};
+export const metadata = {
+	title: "Jordan Devaney",
+	description:
+		"Professional web developer based in Michigan specializing in React and e-commerce solutions.",
+	authors: [{ name: "Jordan Devaney", url: "https://jordandevaney.com" }],
+	applicationName: "Jordan Devaney",
+	creator: "Jordan Devaney",
+	metadataBase: new URL("https://jordandevaney.com"),
+	alternates: {
+		canonical: "https://jordandevaney.com/",
+	},
+	openGraph: {
+		title: "Jordan Devaney",
+		description: "Software Engineer, Web Developer, AI Enthusiast.",
+		url: "https://jordandevaney.com",
+		siteName: "Jordan Devaney",
+		images: [
+			{
+				url: "/preview.webp", // Place your OG image in /public
+				width: 1200,
+				height: 630,
+				alt: "Jordan Devaney Portfolio",
+			},
+		],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Jordan Devaney",
+		description:
+			"Professional web developer based in Michigan specializing in React and e-commerce solutions.",
+		images: ["/preview.webp"],
+	},
+	robots: {
+		index: true,
+		follow: true,
+	},
+	referrer: "strict-origin-when-cross-origin",
+	appleWebApp: {
+		capable: true,
+		title: "Jordan Devaney",
+		statusBarStyle: "black-translucent",
+	},
+	formatDetection: {
+		telephone: false,
+	},
+	other: {
+		"google-site-verification": "r0MxxBLMvLdnUJi9uGtmUeIaOLIrLYdndQmv3BpimCI",
+	},
+};
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" title="Portfolio Website">
 			<head>
 				<title>Portfolio Website</title>
-				<meta charSet="utf-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<meta
-					name="google-site-verification"
-					content="r0MxxBLMvLdnUJi9uGtmUeIaOLIrLYdndQmv3BpimCI"
-				/>
-				<meta
-					name="description"
-					content="Professional web developer based in Michigan specializing in React and e-commerce solutions."
-				/>
 				<link rel="icon" href="/favicon.ico" />
 			</head>
 			<body>{children}</body>
