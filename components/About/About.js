@@ -18,7 +18,7 @@ const About = ({ data }) => {
 					alt={`Profile picture of ${name}`}
 					width={200}
 					height={300}
-					priority
+					priority={true}
 				/>
 			</figure>
 			<div className={styles.content}>
