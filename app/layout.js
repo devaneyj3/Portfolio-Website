@@ -16,7 +16,7 @@ export const metadata = {
 	creator: "Jordan Devaney",
 	metadataBase: new URL("https://jordandevaney.com"),
 	alternates: {
-		canonical: "https://jordandevaney.com/",
+		canonical: "https://www.jordandevaney.com/",
 	},
 	openGraph: {
 		title: "Jordan Devaney",
