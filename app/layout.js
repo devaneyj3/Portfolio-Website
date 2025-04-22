@@ -15,7 +15,7 @@ export const metadata = {
 	applicationName: "Jordan Devaney",
 	creator: "Jordan Devaney",
 	metadataBase: new URL("https://jordandevaney.com"),
-	manifest: "/manifest.json",
+	manifest: "/web.manifest",
 	alternates: {
 		canonical: "https://www.jordandevaney.com/",
 	},
@@ -60,6 +60,21 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+	React.useEffect(() => {
+		if ("serviceWorker" in navigator) {
+			navigator.serviceWorker
+				.register("/service-worker.js")
+				.then((registration) => {
+					console.log(
+						"Service Worker registered with scope:",
+						registration.scope
+					);
+				})
+				.catch((error) => {
+					console.error("Service Worker registration failed:", error);
+				});
+		}
+	}, []);
 	return (
 		<html lang="en" title="Portfolio Website">
 			<head>
