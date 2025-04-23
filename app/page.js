@@ -13,21 +13,6 @@ import ClientProjects from "../components/Projects/ClientProjects/ClientProjects
 import ServicesSection from "@/components/Services/ServicesSection";
 
 const App = () => {
-	React.useEffect(() => {
-		if ("serviceWorker" in navigator) {
-			navigator.serviceWorker
-				.register("/service-worker.js")
-				.then((registration) => {
-					console.log(
-						"Service Worker registered with scope:",
-						registration.scope
-					);
-				})
-				.catch((error) => {
-					console.error("Service Worker registration failed:", error);
-				});
-		}
-	}, []);
 	const [resumeData] = useState(data);
 	return (
 		<main>

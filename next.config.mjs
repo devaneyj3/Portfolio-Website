@@ -1,39 +1,19 @@
-// next.config.mjs
-import withPWA from "next-pwa";
+import withPWAInit from "@ducanh2912/next-pwa";
 
-const pwaConfig = withPWA({
-	dest: "public", // Output service worker files to /public
-	disable: process.env.NODE_ENV === "development", // Disable PWA in development
-	register: true, // Automatically register the service worker
-	skipWaiting: true, // Activate new service worker immediately
-	// Configure caching for offline support
-	runtimeCaching: [
-		{
-			urlPattern: /^https?.*/, // Cache all HTTP/HTTPS requests
-			handler: "NetworkFirst", // Try network first, fallback to cache
-			options: {
-				cacheName: "offlineCache",
-				expiration: {
-					maxEntries: 200,
-					maxAgeSeconds: 24 * 60 * 60, // Cache for 24 hours
-				},
-			},
-		},
-		{
-			urlPattern: /\.(?:png|jpg|jpeg|svg|webp)$/, // Cache images
-			handler: "CacheFirst", // Use cache first, fallback to network
-			options: {
-				cacheName: "imageCache",
-				expiration: {
-					maxEntries: 100,
-					maxAgeSeconds: 30 * 24 * 60 * 60, // Cache images for 30 days
-				},
-			},
-		},
-	],
+const withPWA = withPWAInit({
+	dest: "public",
+	cacheOnFrontEndNav: true,
+	aggressiveFrontEndNavCaching: true,
+	reloadOnOnline: true,
+	swcMinify: true,
+	disable: false,
+	workboxOptions: {
+		disableDevLogs: true,
+	},
 });
 
-export default pwaConfig({
-	// Other Next.js config options
-	// No output: 'export' needed for Vercel
-});
+const nextConfig = {
+	reactStrictMode: true,
+};
+
+export default withPWA(nextConfig);
