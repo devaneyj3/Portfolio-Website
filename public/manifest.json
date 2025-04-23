@@ -1,18 +1,18 @@
 {
-  "id": 5,
+  "id": 6,
   "name": "The Web Accelerator",
   "short_name": "Web Accelerator",
    "icons": [
     {
-      "src": "/icons/android-chrome-192x192.png",
+      "src": "/icons/Me.jpg",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/jpg",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "/icons/Me.jpg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpg"
     }
   ],
   "theme_color": "#FFFFFF",
