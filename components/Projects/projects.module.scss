@@ -60,7 +60,8 @@
 
 .image {
 	aspect-ratio: 16 / 9; /* Adjust the ratio as needed */
-  width: 100%;
+  width: auto;
+	height: auto;
   object-fit: cover;
 
 
