@@ -60,7 +60,7 @@ export const resumeData = {
 			{
 				company: "AG-USA",
 				title: "Web Developer",
-				years: "May 2021 - Present",
+				years: "May 2024 - Present",
 				description: [
 					"Utilize a custom app with NextJS with the Shopify API",
 					"Automate tonnage reports with Python and Pandas",
