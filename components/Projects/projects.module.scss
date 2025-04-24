@@ -30,6 +30,7 @@
 		position: relative;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		margin: 20px;
 
 		&:hover {
 			transform: translateY(-5px);
@@ -60,7 +61,7 @@
 
 .image {
 	aspect-ratio: 16 / 9; /* Adjust the ratio as needed */
-  width: auto;
+  width: 100%;
 	height: auto;
   object-fit: cover;
 
