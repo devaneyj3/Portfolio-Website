@@ -78,6 +78,10 @@ $font-family: 'Roboto', sans-serif; // A modern sans-serif font
     &:last-child {
       border-bottom: none; 
     }
+    li {
+      list-style: circle;
+      margin: 20px;
+    }
   }
 
   .info, .date {
