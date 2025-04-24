@@ -1,6 +1,5 @@
-"use client";
-import React, { useState } from "react";
-import { data } from "../resumeData";
+import React from "react";
+import { resumeData } from "../resumeData";
 
 // component imports
 import Header from "../components/Header/Header";
@@ -13,7 +12,6 @@ import ClientProjects from "../components/Projects/ClientProjects/ClientProjects
 import ServicesSection from "@/components/Services/ServicesSection";
 
 const App = () => {
-	const [resumeData] = useState(data);
 	return (
 		<main>
 			<Header data={resumeData} role="banner" />

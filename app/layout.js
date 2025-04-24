@@ -16,7 +16,6 @@ export const metadata = {
 	applicationName: "Jordan Devaney",
 	creator: "Jordan Devaney",
 	metadataBase: new URL("https://jordandevaney.com"),
-	manifest: "/manifest.json",
 	alternates: {
 		canonical: "https://www.jordandevaney.com/",
 	},

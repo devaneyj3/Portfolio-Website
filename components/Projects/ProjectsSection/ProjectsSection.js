@@ -14,7 +14,8 @@ const ProjectsSection = ({ title, projects, imagePath, sectionId }) => {
 				<Link
 					href={project.url}
 					title={`View project: ${project.title}`}
-					aria-label={`View project: ${project.title}`}>
+					aria-label={`View project: ${project.title}`}
+					target="_blank">
 					<figure className={styles.item__wrap}>
 						<Image
 							className={styles.image}

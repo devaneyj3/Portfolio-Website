@@ -1,4 +1,4 @@
-export const data = {
+export const resumeData = {
 	name: "Jordan Devaney",
 	occupation: "Full Stack Web Developer",
 	description:
@@ -145,19 +145,6 @@ export const data = {
 	},
 	portfolio: {
 		personal_projects: [
-			{
-				title: "Simon Game",
-				category: "Replica of the old Simon Game.",
-				image: "simon-game.png",
-				url: "https://devaneyj3.github.io/simon_game/",
-			},
-			{
-				title: "Game of Life",
-				category:
-					"This project was a part of one of my build weeks at Lambda School. This was done using HTML Canvas, Vanilla JS and Bootstrap.",
-				image: "life.png",
-				url: "https://game-of-lif-jordan.netlify.app/",
-			},
 			{
 				title: "Budget App",
 				category: "A Next.js App",

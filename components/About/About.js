@@ -13,7 +13,6 @@ const About = ({ data }) => {
 			<figure className={styles.profileWrapper}>
 				<Image
 					className={styles.profilePic}
-					href={profilePic}
 					src={profilePic}
 					alt={`Profile picture of ${name}`}
 					width={200}
