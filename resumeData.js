@@ -1,3 +1,5 @@
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 export const resumeData = {
 	name: "Jordan Devaney",
 	occupation: "Full Stack Web Developer",
@@ -31,12 +33,12 @@ export const resumeData = {
 		{
 			name: "Linkedin",
 			url: "https://www.linkedin.com/in/jordandevaney/",
-			className: "fa fa-linkedin",
+			icon: faLinkedin,
 		},
 		{
 			name: "Github",
 			url: "https://github.com/devaneyj3",
-			className: "fa fa-github",
+			icon: faGithub,
 		},
 	],
 	resume: {

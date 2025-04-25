@@ -2,9 +2,11 @@ import React from "react";
 import styles from "./about.module.scss"; // Ensure the path is correct based on your project structure
 import Image from "next/image";
 import Link from "next/link";
+import { Phone, Mail, Download } from "lucide-react";
+import SocialNetworks from "../Shared/socialNetworks";
 
 const About = ({ data }) => {
-	const { name, bio, phone, email, image } = data;
+	const { name, bio, phone, social, email, image } = data;
 	const profilePic = `/images/${image}`;
 	const resume = "/resume.pdf";
 
@@ -24,17 +26,26 @@ const About = ({ data }) => {
 				<div className={styles.aboutMe}>
 					<h2 id="aboutMe">About Me</h2>
 					<div dangerouslySetInnerHTML={{ __html: bio }} />
+					<SocialNetworks />
 				</div>
 				<section className={styles.contactDetails}>
-					<h2 id="contactDetails">Contact Details</h2>
 					<address>
-						<p className={styles.address}>
-							<span>{name}</span>
-							<span>{phone}</span>
-							<Link href="mailto:jordandevaney28@gmail.com">
-								jordandevaney28@gmail.com
-							</Link>
-						</p>
+						<div className={styles.phone_detail}>
+							<div className={styles.icon}>
+								<Phone />
+							</div>
+							<p className={styles.phone}>{phone}</p>
+						</div>
+						<div className={styles.email_detail}>
+							<div className={styles.icon}>
+								<Mail />
+							</div>
+							<p>
+								<Link href="mailto:jordandevaney28@gmail.com">
+									jordandevaney28@gmail.com
+								</Link>
+							</p>
+						</div>
 					</address>
 				</section>
 				<div className={styles.download}>
@@ -44,6 +55,7 @@ const About = ({ data }) => {
 						aria-label="Download Resume"
 						target="_blank">
 						<i className="fa fa-download" aria-hidden="true"></i>
+						<Download />
 						Download Resume
 					</Link>
 				</div>

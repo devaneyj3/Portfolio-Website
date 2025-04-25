@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./footer.module.scss"; // Ensure the path is correct
 import Link from "next/link";
+import SocialNetworks from "../Shared/socialNetworks";
 
 const Footer = ({ data }) => {
 	const { social } = data;
@@ -22,8 +23,7 @@ const Footer = ({ data }) => {
 		<footer className={styles.footer} aria-label="Footer">
 			<div className={styles.row}>
 				<div className={styles.columns}>
-					<ul className={styles.socialLinks}>{networksMap}</ul>
-
+					<SocialNetworks />
 					<ul className={styles.copyRight}>
 						<li>&copy; 2021-2025 Jordan Devaney</li>
 					</ul>

@@ -23,23 +23,7 @@ $font-family: 'Roboto', sans-serif; // Modern sans-serif font
     list-style: none;
     margin: 0;
     padding: 0;
-
-    .socialLinkItem {
-      display: inline-block;
-      margin-right: 20px; 
-
-      a {
-        color: #fff; 
-        font-size: 2rem; 
-        transition: color 0.2s ease;
-
-        &:hover {
-          color: $primary-color; 
-        }
-      }
-    }
   }
-
   .copyRight {
     list-style: none;
     margin: 10px 0 0 0; 

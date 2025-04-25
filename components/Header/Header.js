@@ -11,21 +11,6 @@ const Header = ({ data }) => {
 		address: { state },
 	} = data;
 
-	// Map social networks to list items with accessibility enhancements
-	const networks = social.map((network) => (
-		<li key={network.name} className={styles.socialLink}>
-			<Link
-				href={network.url}
-				aria-label={`Follow me on ${network.name}`}
-				title={`Follow me on ${network.name}`}>
-				<i
-					className={`${network.className} ${styles.icon}`}
-					aria-hidden="true"></i>
-				<span className="sr-only">{network.name}</span>
-			</Link>
-		</li>
-	));
-
 	return (
 		<header className={styles.header}>
 			<nav className={styles.wrap}>
@@ -92,9 +77,6 @@ const Header = ({ data }) => {
 						driving force in my career endeavors. My biggest core value is
 						growing as a developer.
 					</p>
-				</div>
-				<div>
-					<ul className={styles.social}>{networks}</ul>
 				</div>
 			</div>
 		</header>
