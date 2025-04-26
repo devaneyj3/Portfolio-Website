@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // app/layout.tsx
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Nav from "@/components/Nav/nav";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
@@ -86,7 +85,6 @@ export default function RootLayout({ children }) {
 				/>
 			</head>
 			<body>
-				<Nav />
 				{children}
 				<Analytics />
 			</body>
