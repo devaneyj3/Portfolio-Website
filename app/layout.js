@@ -1,16 +1,14 @@
 import React from "react";
 import "./globals.css";
+import Script from "next/script";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 // app/layout.tsx
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-config.autoAddCss = false;
+import Nav from "@/components/Nav/nav";
+import { Analytics } from "@vercel/analytics/react";
 
-export const viewport = {
-	themeColor: "#0f172a",
-	colorScheme: "light",
-};
 export const metadata = {
 	title: "Jordan Devaney",
 	description:
@@ -48,7 +46,6 @@ export const metadata = {
 		index: true,
 		follow: true,
 	},
-	referrer: "strict-origin-when-cross-origin",
 	appleWebApp: {
 		capable: true,
 		title: "Jordan Devaney",
@@ -61,6 +58,11 @@ export const metadata = {
 		"google-site-verification": "r0MxxBLMvLdnUJi9uGtmUeIaOLIrLYdndQmv3BpimCI",
 	},
 };
+config.autoAddCss = false;
+export const viewport = {
+	themeColor: "#0f172a",
+	colorScheme: "light",
+};
 
 export default function RootLayout({ children }) {
 	return (
@@ -68,8 +70,26 @@ export default function RootLayout({ children }) {
 			<head>
 				<title>Portfolio Website</title>
 				<link rel="icon" href="/favicon.ico" />
+				<Script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-KNK69QV2LM"
+				/>
+				<Script
+					dangerouslySetInnerHTML={{
+						__html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KNK69QV2LM');
+          `,
+					}}
+				/>
 			</head>
-			<body>{children}</body>
+			<body>
+				<Nav />
+				{children}
+				<Analytics />
+			</body>
 		</html>
 	);
 }
